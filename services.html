@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Services — Roma Norte Host | Airbnb Property Management CDMX</title>
+  <meta name="description" content="Full-service Airbnb and short-term rental management in Colonia Roma Norte. Photography, dynamic pricing, guests, cleaning, monthly reports. 20–25% fee, no setup costs."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .services-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+      margin-bottom: 5rem;
+    }
+    .service-item {
+      background: #fff;
+      border: 1px solid rgba(26,61,40,.08);
+      border-radius: 12px;
+      padding: 2rem;
+      display: flex; gap: 1.2rem;
+      transition: box-shadow .3s, transform .3s;
+    }
+    .service-item:hover { box-shadow: 0 12px 36px rgba(26,61,40,.09); transform: translateY(-3px); }
+    .service-icon {
+      font-size: 2rem; width: 52px; height: 52px;
+      background: rgba(42,171,138,.1); border-radius: 12px;
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .service-item h3 { font-family: var(--font-display); font-size: 1.1rem; color: var(--forest); margin-bottom: .4rem; }
+    .service-item p { font-size: .88rem; color: var(--gray); line-height: 1.65; }
+    .pricing-table-wrap { margin-bottom: 5rem; }
+    .pricing-comparison {
+      display: grid; grid-template-columns: 2fr 1fr 1fr;
+      border: 1px solid rgba(26,61,40,.12); border-radius: 12px; overflow: hidden;
+    }
+    .pc-header { background: var(--forest); color: #fff; padding: 1rem 1.5rem; font-weight: 600; font-size: .9rem; }
+    .pc-header:first-child { background: transparent; color: var(--gray); font-size: .8rem; letter-spacing: .06em; text-transform: uppercase; }
+    .pc-header.gold { background: var(--gold); color: #000; }
+    .pc-row { display: contents; }
+    .pc-cell {
+      padding: .9rem 1.5rem;
+      border-top: 1px solid rgba(26,61,40,.07);
+      font-size: .88rem; color: var(--gray);
+      display: flex; align-items: center;
+    }
+    .pc-cell.center { justify-content: center; font-weight: 600; color: var(--forest); }
+    .pc-cell.gold-bg { background: rgba(201,160,48,.06); }
+    .tick { color: var(--teal); font-size: 1rem; }
+    .dash { color: rgba(26,61,40,.2); }
+    .faq-list { display: flex; flex-direction: column; gap: 1rem; }
+    .faq-item {
+      background: #fff; border: 1px solid rgba(26,61,40,.08); border-radius: 12px;
+      overflow: hidden;
+    }
+    .faq-q {
+      padding: 1.2rem 1.5rem;
+      font-weight: 600; font-size: .95rem; color: var(--forest);
+      cursor: pointer;
+      display: flex; justify-content: space-between; align-items: center;
+      user-select: none;
+    }
+    .faq-q::after { content: "+"; font-size: 1.4rem; color: var(--teal); transition: transform .3s; }
+    .faq-item.open .faq-q::after { transform: rotate(45deg); }
+    .faq-a {
+      max-height: 0; overflow: hidden; transition: max-height .3s ease;
+      padding: 0 1.5rem;
+      font-size: .9rem; color: var(--gray); line-height: 1.7;
+    }
+    .faq-item.open .faq-a { max-height: 200px; padding: 0 1.5rem 1.2rem; }
+    @media(max-width: 768px) {
+      .services-grid { grid-template-columns: 1fr; }
+      .pricing-comparison { grid-template-columns: 1.5fr 1fr 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="guide.html">Roma Norte</a></li>
+      <li><a href="contact.html" class="nav-cta">Get Free Estimate</a></li>
+    </ul>
+    <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="guide.html">Roma Norte</a></li>
+      <li><a href="contact.html">Get Free Estimate →</a></li>
+    </ul>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag">What We Do</span>
+      <h1>Full-service management.<br/><em>Zero effort for you.</em></h1>
+      <p>Every task a property owner hates doing — we handle it. So you can collect the income without the headaches.</p>
+    </div>
+  </div>
+
+  <section class="content-section">
+    <div class="container">
+
+      <div class="section-header">
+        <span class="section-tag">Our Services</span>
+        <h2>Everything your property needs.<br/><em>Nothing you have to do.</em></h2>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-item">
+          <div class="service-icon">📸</div>
+          <div>
+            <h3>Professional Photography</h3>
+            <p>Listings with professional photos get 40% more bookings. We arrange the full shoot — interior, amenities, and neighbourhood — before your first guest checks in.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">📝</div>
+          <div>
+            <h3>Listing Creation & SEO</h3>
+            <p>Your property listed on Airbnb and our direct booking site with optimised titles, descriptions, and keywords targeting digital nomads, medical professionals, and corporate travellers.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">💸</div>
+          <div>
+            <h3>Dynamic Pricing</h3>
+            <p>Nightly rates adjusted daily based on demand, local events, competitor pricing, and seasonality. Most owners see a 25–40% revenue increase versus a fixed price.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">💬</div>
+          <div>
+            <h3>Guest Communication</h3>
+            <p>All inquiries and messages answered within 1 hour, 7 days a week. Pre-arrival instructions, during-stay support, and check-out reminders handled in English and Spanish.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🔑</div>
+          <div>
+            <h3>Self Check-in Setup</h3>
+            <p>Smart lock coordination, access code management, and detailed guest instructions so no one ever needs to meet in person at check-in — including you.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🧹</div>
+          <div>
+            <h3>Professional Cleaning</h3>
+            <p>Hotel-quality turnover cleaning between every stay. Fresh linens, restocked essentials, property inspection report after each clean. We use vetted, trusted cleaners.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🔧</div>
+          <div>
+            <h3>Maintenance Coordination</h3>
+            <p>Minor repairs handled through our vendor network. You hear about issues on the monthly report — not at 11pm on a Friday. Emergency response included.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">📊</div>
+          <div>
+            <h3>Monthly Revenue Reports</h3>
+            <p>Clear PDF every month: nights booked, gross revenue, our management fee, net income, and occupancy rate. Full transparency, no surprises.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🌐</div>
+          <div>
+            <h3>Direct Booking Channel</h3>
+            <p>Your property listed on StayWork CDMX — our direct booking site. Direct bookings earn you 10–15% more than Airbnb because there are no platform commissions.</p>
+          </div>
+        </div>
+        <div class="service-item">
+          <div class="service-icon">🤖</div>
+          <div>
+            <h3>AI Agent Visibility</h3>
+            <p>Your property discoverable by AI travel assistants (ChatGPT, Perplexity, Claude) via structured data and our availability API. The future of travel search, today.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- PRICING TABLE -->
+      <div class="section-header">
+        <span class="section-tag">Pricing</span>
+        <h2>We only earn when <em>you earn.</em></h2>
+        <p>No setup fees. No monthly retainers. A simple percentage of revenue — so our incentives are perfectly aligned.</p>
+      </div>
+
+      <div class="pricing-table-wrap">
+        <div class="pricing-comparison">
+          <div class="pc-header">Included</div>
+          <div class="pc-header">Standard · 20%</div>
+          <div class="pc-header gold">Premium · 25%</div>
+
+          <div class="pc-cell">Professional photography</div>
+          <div class="pc-cell center"><span class="tick">✓</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Listing creation & optimisation</div>
+          <div class="pc-cell center"><span class="tick">✓</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Guest communication 7 days/week</div>
+          <div class="pc-cell center"><span class="tick">✓</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Self check-in setup</div>
+          <div class="pc-cell center"><span class="tick">✓</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Cleaning coordination</div>
+          <div class="pc-cell center"><span class="tick">✓</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Monthly revenue reports</div>
+          <div class="pc-cell center"><span class="tick">✓</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Dynamic pricing engine</div>
+          <div class="pc-cell center"><span class="dash">—</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Direct booking channel (StayWork CDMX)</div>
+          <div class="pc-cell center"><span class="dash">—</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">Monthly strategy call</div>
+          <div class="pc-cell center"><span class="dash">—</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+
+          <div class="pc-cell">AI agent visibility</div>
+          <div class="pc-cell center"><span class="dash">—</span></div>
+          <div class="pc-cell center gold-bg"><span class="tick">✓</span></div>
+        </div>
+      </div>
+
+      <!-- FAQ -->
+      <div class="section-header">
+        <span class="section-tag">FAQ</span>
+        <h2>Common owner <em>questions.</em></h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <div class="faq-q">Do I need to do anything once we start?</div>
+          <div class="faq-a">No. Once your property is set up, your only job is to check the monthly report and your bank account. Everything else is on us.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">How quickly can my property go live?</div>
+          <div class="faq-a">Typically within 2 weeks of signing. That includes the photo shoot, listing creation, pricing calibration, and smart lock setup.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Do I sign a long-term contract?</div>
+          <div class="faq-a">We ask for a 3-month minimum to give the listing time to build reviews and optimise. After that, either party can exit with 30 days notice.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">What if something breaks in my apartment?</div>
+          <div class="faq-a">Minor repairs (under $500 MXN) we handle immediately and note in the monthly report. Larger repairs require your approval — we get quotes and coordinate everything.</div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-q">Can I block dates for my own use?</div>
+          <div class="faq-a">Yes. You can block any dates you want through the owner calendar. Just give us 48 hours notice when possible so we can manage existing guest communications.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Ready to get started?</h2>
+        <p>Free evaluation of your Roma Norte property. We'll give you an honest income estimate.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn-primary-dark">Get a Free Estimate →</a>
+          <a href="mailto:hello@romanortehost.mx" class="btn-ghost-dark">✉ hello@romanortehost.mx</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span></div>
+          <p>Premier property management specialists in Colonia Roma Norte, Mexico City.</p>
+          <a href="mailto:hello@romanortehost.mx">hello@romanortehost.mx</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="guide.html">Roma Norte Guide</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Guest Brand</h4>
+          <ul>
+            <li><a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>©2026 Roma Norte Host · Colonia Roma Norte, CDMX</span>
+        <span>Guest brand: <a href="https://stayworkcdmx.com" target="_blank">StayWork CDMX</a></span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => q.parentElement.classList.toggle('open'));
+    });
+  </script>
+</body>
+</html>

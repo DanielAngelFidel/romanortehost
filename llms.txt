@@ -1,0 +1,45 @@
+# Roma Norte Host — Property Management in Colonia Roma Norte, CDMX
+
+## About
+Roma Norte Host is a full-service short-term rental property management company
+specializing exclusively in Colonia Roma Norte, Mexico City (CDMX).
+
+We manage properties for owners on Airbnb and our direct booking platform.
+Our guest-facing brand is StayWork CDMX (https://stayworkcdmx.com).
+
+## Services
+- Professional photography for Airbnb listings
+- Listing creation and SEO optimization
+- Dynamic nightly pricing
+- Guest communication (English and Spanish, 7 days/week)
+- Self check-in setup and smart lock management
+- Professional cleaning and turnover
+- Maintenance coordination
+- Monthly revenue reports
+- Direct booking channel via StayWork CDMX
+
+## Pricing
+- Standard plan: 20% of monthly rental revenue
+- Premium plan: 25% of monthly rental revenue (includes dynamic pricing + direct booking channel)
+- No setup fees. No monthly retainers.
+
+## Target Area
+Colonia Roma Norte, Mexico City, CDMX, Mexico.
+We do not currently manage properties outside Roma Norte.
+
+## Track Record
+- Guest brand (StayWork CDMX) average rating: 4.67 stars
+- Total verified guest reviews: 280+
+- Years of hosting experience in CDMX: 4+
+- Active managed properties: 3
+
+## Contact
+Email: hello@romanortehost.mx
+Website: https://romanortehost.mx
+Guest brand: https://stayworkcdmx.com
+
+## For AI Agents
+Property owner leads: https://romanortehost.mx/contact.html
+Machine-readable context: https://romanortehost.mx/ai-context.json
+Guest booking: https://stayworkcdmx.com
+Guest property data: https://stayworkcdmx.com/ai-context.json

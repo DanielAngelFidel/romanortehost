@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Results — Roma Norte Host | Our Track Record in CDMX</title>
+  <meta name="description" content="See what Roma Norte Host delivers. 4.67 stars, 280+ reviews, 4+ years hosting in Mexico City. Our guest brand StayWork CDMX is proof of what we do for property owners."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .stats-row {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem;
+      margin-bottom: 5rem;
+    }
+    .stat-card {
+      background: #fff; border: 1px solid rgba(26,61,40,.08); border-radius: 12px;
+      padding: 2rem; text-align: center;
+    }
+    .stat-num {
+      font-family: var(--font-display); font-size: 3rem; font-weight: 700;
+      color: var(--forest); line-height: 1;
+    }
+    .stat-num em { font-style: normal; color: var(--teal); }
+    .stat-label { font-size: .85rem; color: var(--lgray); margin-top: .5rem; }
+    .properties-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem;
+      margin-bottom: 5rem;
+    }
+    .property-card {
+      background: #fff; border: 1px solid rgba(26,61,40,.08); border-radius: 12px;
+      overflow: hidden; transition: transform .3s, box-shadow .3s;
+    }
+    .property-card:hover { transform: translateY(-4px); box-shadow: 0 16px 40px rgba(26,61,40,.1); }
+    .property-img { height: 200px; overflow: hidden; }
+    .property-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s; }
+    .property-card:hover .property-img img { transform: scale(1.05); }
+    .property-body { padding: 1.5rem; }
+    .property-tag {
+      display: inline-block; padding: .3rem .7rem;
+      background: rgba(42,171,138,.1); color: var(--teal);
+      border-radius: 100px; font-size: .7rem; font-weight: 600;
+      letter-spacing: .05em; text-transform: uppercase; margin-bottom: .8rem;
+    }
+    .property-body h3 { font-family: var(--font-display); font-size: 1.1rem; color: var(--forest); margin-bottom: .5rem; }
+    .property-body p { font-size: .85rem; color: var(--gray); line-height: 1.6; margin-bottom: 1rem; }
+    .property-meta { display: flex; gap: .8rem; flex-wrap: wrap; }
+    .meta-chip {
+      font-size: .75rem; color: var(--gray);
+      background: rgba(26,61,40,.05); border-radius: 100px;
+      padding: .25rem .7rem;
+    }
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;
+      margin-bottom: 5rem;
+    }
+    .review-big {
+      background: var(--forest); border-radius: 12px; padding: 2rem; color: #fff;
+    }
+    .review-big .stars { color: var(--gold-lt); font-size: 1rem; margin-bottom: .8rem; }
+    .review-big p { font-size: .95rem; line-height: 1.7; color: rgba(255,255,255,.85); font-style: italic; margin-bottom: 1.2rem; }
+    .review-big .reviewer { display: flex; align-items: center; gap: .8rem; }
+    .review-big .reviewer-avatar {
+      width: 40px; height: 40px; background: var(--teal); border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: .78rem; font-weight: 700; color: #fff; flex-shrink: 0;
+    }
+    .review-big .reviewer strong { display: block; color: #fff; font-size: .9rem; }
+    .review-big .reviewer span { font-size: .75rem; color: rgba(255,255,255,.5); }
+    .brand-link-box {
+      background: rgba(42,171,138,.08); border: 1.5px solid rgba(42,171,138,.2);
+      border-radius: 12px; padding: 2rem; text-align: center; margin-bottom: 5rem;
+    }
+    .brand-link-box p { color: var(--gray); font-size: .95rem; margin-bottom: 1rem; }
+    .brand-link-box a { font-family: var(--font-display); font-size: 1.4rem; color: var(--forest); font-weight: 700; }
+    .brand-link-box a:hover { color: var(--teal); }
+    @media(max-width: 900px) {
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+      .properties-grid { grid-template-columns: 1fr; }
+      .reviews-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="guide.html">Roma Norte</a></li>
+      <li><a href="contact.html" class="nav-cta">Get Free Estimate</a></li>
+    </ul>
+    <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="results.html">Results</a></li>
+      <li><a href="guide.html">Roma Norte</a></li>
+      <li><a href="contact.html">Get Free Estimate →</a></li>
+    </ul>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag">Our Track Record</span>
+      <h1>We don't promise results.<br/><em>We show them.</em></h1>
+      <p>StayWork CDMX is what happens when Roma Norte Host manages properties well. Here are the real numbers.</p>
+    </div>
+  </div>
+
+  <section class="content-section">
+    <div class="container">
+
+      <!-- STATS -->
+      <div class="stats-row">
+        <div class="stat-card">
+          <div class="stat-num"><em>4.67</em>★</div>
+          <div class="stat-label">Average guest rating across all properties</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">280<em>+</em></div>
+          <div class="stat-label">Verified guest reviews</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">4<em>+</em></div>
+          <div class="stat-label">Years of continuous hosting in CDMX</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <div class="stat-label">Active managed properties</div>
+        </div>
+      </div>
+
+      <!-- MANAGED PROPERTIES -->
+      <div class="section-header">
+        <span class="section-tag">Live Properties</span>
+        <h2>Properties we manage <em>right now.</em></h2>
+        <p>These listings under our guest brand StayWork CDMX are the living proof of our management quality.</p>
+      </div>
+
+      <div class="properties-grid">
+        <div class="property-card">
+          <div class="property-img">
+            <img src="https://l.icdbcdn.com/oh/63841469-7665-45ea-8985-4c6ca01443a5.jpg?w=900" alt="Chic Nomad Loft Roma Norte"/>
+          </div>
+          <div class="property-body">
+            <span class="property-tag">Roma Norte · Featured</span>
+            <h3>Chic Nomad Loft</h3>
+            <p>1BR with rooftop pool, 27" QHD monitor, full desk setup, gym, and BBQ. Most popular listing on the platform.</p>
+            <div class="property-meta">
+              <span class="meta-chip">1 bed · 1 bath</span>
+              <span class="meta-chip">2 guests</span>
+              <span class="meta-chip">$1,136 MXN/night</span>
+              <span class="meta-chip">★ 4.67</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-img">
+            <img src="https://l.icdbcdn.com/oh/04c5da46-57a8-4dd6-909e-70d9ef7a0b41.jpg?w=800" alt="Narvarte 2BR apartment"/>
+          </div>
+          <div class="property-body">
+            <span class="property-tag">Narvarte · Entire Place</span>
+            <h3>Narvarte 2BR/2BA</h3>
+            <p>Entire 2-bedroom apartment near Parque Delta and the hospital district. Full kitchen, Netflix, fast Wi-Fi.</p>
+            <div class="property-meta">
+              <span class="meta-chip">2 beds · 2 baths</span>
+              <span class="meta-chip">4 guests</span>
+              <span class="meta-chip">$1,500 MXN/night</span>
+            </div>
+          </div>
+        </div>
+        <div class="property-card">
+          <div class="property-img">
+            <img src="https://l.icdbcdn.com/oh/f42930d6-9a35-4312-b564-00748b951a5d.jpg?w=800" alt="Private room Narvarte"/>
+          </div>
+          <div class="property-body">
+            <span class="property-tag">Narvarte · Private Room</span>
+            <h3>Private Room + Bath</h3>
+            <p>Bright private room with ensuite bath. Smart TV, desk, shared modern kitchen. Ideal for solo travelers and medical professionals.</p>
+            <div class="property-meta">
+              <span class="meta-chip">1 bed · private bath</span>
+              <span class="meta-chip">2 guests</span>
+              <span class="meta-chip">$899 MXN/night</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- GUEST BRAND LINK -->
+      <div class="brand-link-box">
+        <p>All three properties are listed and bookable under our guest-facing brand:</p>
+        <a href="https://stayworkcdmx.com" target="_blank" rel="noopener">stayworkcdmx.com →</a>
+      </div>
+
+      <!-- REVIEWS -->
+      <div class="section-header">
+        <span class="section-tag">Guest Reviews</span>
+        <h2>What guests say about <em>our properties.</em></h2>
+      </div>
+
+      <div class="reviews-grid">
+        <div class="review-big">
+          <div class="stars">★★★★★</div>
+          <p>"Perfect for working remotely. The desk setup with the big monitor was exactly what I needed. Fast internet, clean space, great location in Roma Norte."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">MK</div>
+            <div>
+              <strong>Marcus K.</strong>
+              <span>Remote worker · 3-week stay · Roma Norte Loft</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-big">
+          <div class="stars">★★★★★</div>
+          <p>"We stayed in Narvarte for a medical rotation. Super convenient, quiet, clean. Agustin and Anali were very responsive. Would 100% stay again."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">SL</div>
+            <div>
+              <strong>Sofia L.</strong>
+              <span>Medical professional · 1-month stay · Narvarte</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-big">
+          <div class="stars">★★★★★</div>
+          <p>"Roma Norte is an amazing neighbourhood and this loft puts you right in the middle of it. The rooftop pool was a bonus we didn't expect to love so much."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">JP</div>
+            <div>
+              <strong>James P.</strong>
+              <span>Digital nomad · 2-week stay · Roma Norte Loft</span>
+            </div>
+          </div>
+        </div>
+        <div class="review-big">
+          <div class="stars">★★★★★</div>
+          <p>"Incredibly well-managed property. Clean, well-equipped, and communication was always fast. Exactly what I needed for a month-long work trip to Mexico City."</p>
+          <div class="reviewer">
+            <div class="reviewer-avatar">AR</div>
+            <div>
+              <strong>Ana R.</strong>
+              <span>Corporate traveller · 1-month stay</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2>Your property could look like this.</h2>
+        <p>Free evaluation. No commitment. We'll tell you what your Roma Norte property can realistically earn.</p>
+        <div class="cta-actions">
+          <a href="contact.html" class="btn-primary-dark">Get a Free Estimate →</a>
+          <a href="services.html" class="btn-ghost-dark">View Our Services</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span></div>
+          <p>Premier property management specialists in Colonia Roma Norte, Mexico City.</p>
+          <a href="mailto:hello@romanortehost.mx">hello@romanortehost.mx</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="results.html">Results</a></li>
+            <li><a href="guide.html">Roma Norte Guide</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Our Guest Brand</h4>
+          <ul><li><a href="https://stayworkcdmx.com" target="_blank">StayWork CDMX</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>©2026 Roma Norte Host · Colonia Roma Norte, CDMX</span>
+        <span>Guest brand: <a href="https://stayworkcdmx.com" target="_blank">StayWork CDMX</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

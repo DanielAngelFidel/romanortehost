@@ -1,0 +1,47 @@
+{
+  "brand": "Roma Norte Host",
+  "type": "property_management_company",
+  "website": "https://romanortehost.mx",
+  "email": "hello@romanortehost.mx",
+  "guestBrand": {
+    "name": "StayWork CDMX",
+    "website": "https://stayworkcdmx.com",
+    "aiContext": "https://stayworkcdmx.com/ai-context.json"
+  },
+  "serviceArea": {
+    "neighborhood": "Colonia Roma Norte",
+    "city": "Mexico City",
+    "region": "CDMX",
+    "country": "MX"
+  },
+  "services": [
+    "Professional photography",
+    "Airbnb listing creation and optimization",
+    "Dynamic nightly pricing",
+    "Guest communication 7 days/week",
+    "Self check-in setup",
+    "Professional cleaning and turnover",
+    "Maintenance coordination",
+    "Monthly revenue reports",
+    "Direct booking channel"
+  ],
+  "pricing": {
+    "standard": { "fee": "20%", "basis": "monthly rental revenue" },
+    "premium":  { "fee": "25%", "basis": "monthly rental revenue", "includes": ["dynamic pricing", "direct booking channel", "monthly strategy call"] },
+    "setupFee": 0,
+    "monthlyRetainer": 0
+  },
+  "trackRecord": {
+    "averageRating": 4.67,
+    "totalReviews": 280,
+    "yearsHosting": 4,
+    "activeProperties": 3
+  },
+  "idealFor": [
+    "Roma Norte property owners wanting passive income",
+    "Owners with empty furnished apartments",
+    "Owners switching from long-term to short-term rental",
+    "Owners unhappy with current Airbnb management"
+  ],
+  "leadCapture": "https://romanortehost.mx/contact.html"
+}
