@@ -7,4 +7,4 @@
 # /contact     /contact.html     200
 
 # 404 fallback
-/*    /index.html    404
+/*    /index.html    200
