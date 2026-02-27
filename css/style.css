@@ -2,21 +2,22 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
-  --forest:   #1a3d28;
-  --forest-d: #112a1b;
-  --teal:     #2aab8a;
-  --teal-lt:  #3dc9a4;
-  --gold:     #c9a030;
-  --gold-lt:  #e8c84a;
+  /* ── Paleta Airbnb ─────────────────── */
+  --forest:   #FF5A5F;   /* Rausch — rojo coral Airbnb */
+  --forest-d: #e04045;   /* Rausch oscuro */
+  --teal:     #00A699;   /* Babu — teal Airbnb */
+  --teal-lt:  #00c4b4;   /* Babu claro */
+  --gold:     #FF5A5F;   /* usar Rausch en lugar de gold */
+  --gold-lt:  #ff7c80;   /* Rausch claro */
   --dark:     #0f0f0f;
   --charcoal: #1e1e1e;
-  --gray:     #555;
-  --lgray:    #888;
-  --cream:    #f8f6f1;
+  --gray:     #484848;   /* Hof — gris texto Airbnb */
+  --lgray:    #767676;   /* Foggy — gris secundario Airbnb */
+  --cream:    #FFFFFF;   /* Airbnb white */
   --white:    #ffffff;
 
-  --font-display: 'Playfair Display', Georgia, serif;
-  --font-body:    'DM Sans', system-ui, sans-serif;
+  --font-display: 'Plus Jakarta Sans', system-ui, sans-serif;
+  --font-body:    'Plus Jakarta Sans', system-ui, sans-serif;
 
   --max-w: 1200px;
   --r:     12px;
@@ -143,16 +144,16 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .nav-links a:hover { color: var(--forest); }
 .nav-links .nav-cta {
   padding: .55rem 1.4rem;
-  background: var(--forest);
+  background: #FF5A5F;
   color: #fff !important;
   border-radius: 100px;
   font-weight: 600;
   transition: background .2s, transform .2s;
 }
-.nav-links .nav-cta:hover { background: var(--teal); transform: translateY(-1px); }
+.nav-links .nav-cta:hover { background: #e04045; transform: translateY(-1px); }
 
 .nav-burger { display: none; flex-direction: column; gap: 5px; background: none; border: none; cursor: pointer; padding: .3rem; }
-.nav-burger span { display: block; width: 24px; height: 2px; background: var(--forest); border-radius: 2px; transition: all .3s; }
+.nav-burger span { display: block; width: 24px; height: 2px; background: #FF5A5F; border-radius: 2px; transition: all .3s; }
 
 .mobile-menu {
   display: none; position: fixed; inset: 0; z-index: 99;
@@ -197,7 +198,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .hero-badge {
   display: inline-flex; align-items: center; gap: .6rem;
   padding: .45rem 1rem;
-  background: rgba(42,171,138,.1);
+  background: rgba(0,166,153,.08);
   border: 1px solid rgba(42,171,138,.25);
   border-radius: 100px;
   font-size: .78rem; font-weight: 600;
@@ -282,7 +283,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 /* ─── MARQUEE ─────────────────────────────────────── */
 .marquee-strip {
-  background: var(--forest);
+  background: #FF5A5F;
   padding: .9rem 0;
   overflow: hidden;
   white-space: nowrap;
@@ -364,7 +365,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 /* ─── PROOF SECTION ───────────────────────────────── */
 .proof-section {
-  background: var(--forest);
+  background: #FF5A5F;
   padding: 7rem 0;
 }
 .proof-inner {
@@ -378,7 +379,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 .proof-list { list-style: none; display: flex; flex-direction: column; gap: .7rem; margin-bottom: 2rem; }
 .proof-list li { display: flex; align-items: center; gap: .7rem; color: rgba(255,255,255,.85); font-size: .95rem; }
-.check { color: var(--teal); font-weight: 700; }
+.check { color: #00A699; font-weight: 700; }
 
 .proof-card-col { display: flex; flex-direction: column; gap: 1.2rem; }
 .review-card {
@@ -564,7 +565,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 /* ─── SHARED PAGE STYLES ──────────────────────────── */
 .page-hero {
   padding: 9rem 0 5rem;
-  background: var(--forest);
+  background: #FF5A5F;
   text-align: center;
 }
 .page-hero .section-tag { color: rgba(255,255,255,.5); }
@@ -599,12 +600,12 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   transition: all .2s;
 }
 .lang-btn.active {
-  background: var(--forest);
+  background: #FF5A5F;
   color: #fff;
 }
 
 /* ─── TEAM CARDS ──────────────────────────────────── */
-.team-section { padding: 7rem 0; background: var(--cream); }
+.team-section { padding: 7rem 0; background: #f7f7f7; }
 .team-grid {
   display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
   max-width: 860px; margin: 0 auto;
@@ -639,7 +640,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
   display: inline-block;
   font-size: .7rem; font-weight: 700;
   letter-spacing: .1em; text-transform: uppercase;
-  color: var(--teal);
+  color: #FF5A5F;
   margin-bottom: .6rem;
 }
 .team-card h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--forest); margin-bottom: .5rem; }
@@ -711,7 +712,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 .compliance-counter {
   display: flex; align-items: center; justify-content: center; gap: 3rem;
-  background: var(--forest);
+  background: #FF5A5F;
   border-radius: 16px; padding: 3rem;
   margin-bottom: 1rem;
 }
@@ -778,7 +779,7 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 
 .compliance-counter {
   display: flex; align-items: center; justify-content: center; gap: 4rem;
-  background: var(--forest); border-radius: 20px; padding: 3rem 4rem;
+  background: #FF5A5F; border-radius: 20px; padding: 3rem 4rem;
   margin-bottom: 1rem;
 }
 .counter-item { text-align: center; }
