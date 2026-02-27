@@ -1,313 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Roma Norte Host — Premier Property Management in Colonia Roma</title>
-  <meta name="description" content="Full-service Airbnb and short-term rental management in Colonia Roma Norte, Mexico City. We handle everything — you collect the income. Managed by the team behind StayWork CDMX."/>
-  <meta name="keywords" content="property management roma norte, airbnb management mexico city, short term rental management cdmx, colonia roma airbnb management"/>
-
-  <!-- Open Graph -->
-  <meta property="og:title" content="Roma Norte Host — Property Management in Colonia Roma"/>
-  <meta property="og:description" content="We turn your Roma Norte property into a top-rated short-term rental. Photography, guests, cleaning, pricing — all handled."/>
-  <meta property="og:type" content="website"/>
-  <meta property="og:url" content="https://romanortehost.mx"/>
-
-  <!-- Schema.org -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Roma Norte Host",
-    "description": "Full-service short-term rental property management in Colonia Roma Norte, Mexico City.",
-    "url": "https://romanortehost.mx",
-    "email": "hello@romanortehost.mx",
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "Mexico City",
-      "addressRegion": "CDMX",
-      "addressCountry": "MX"
-    },
-    "areaServed": "Colonia Roma Norte, Mexico City",
-    "sameAs": ["https://stayworkcdmx.com"]
-  }
-  </script>
-
-  <!-- Fonts -->
+  <title>Roma Norte Host — Gestión de propiedades en Colonia Roma Norte, CDMX</title>
+  <meta name="description" content="Gestión integral de Airbnb y renta corta en Colonia Roma Norte, Ciudad de México. Nos encargamos de todo — tú cobras el ingreso."/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
-
   <link rel="stylesheet" href="css/style.css"/>
 </head>
 <body>
 
-  <!-- NAV -->
   <nav class="nav" id="nav">
-    <a href="/" class="nav-logo">
-      <span class="logo-rn">Roma Norte</span>
-      <span class="logo-host">Host</span>
+    <a href="index.html" class="nav-logo">
+      <span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span>
     </a>
     <ul class="nav-links">
-      <li><a href="services.html">Services</a></li>
-      <li><a href="results.html">Results</a></li>
-      <li><a href="guide.html">Roma Norte</a></li>
-      <li><a href="contact.html" class="nav-cta">Get Free Estimate</a></li>
+      <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+      <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
+      <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+      <li><a href="guia.html" data-es="Roma Norte" data-en="Roma Norte">Roma Norte</a></li>
+      <li><a href="contacto.html" class="nav-cta" data-es="Cotizar mi propiedad" data-en="Get Free Estimate">Cotizar mi propiedad</a></li>
     </ul>
-    <button class="nav-burger" id="burger" aria-label="Menu">
-      <span></span><span></span><span></span>
-    </button>
+    <div style="display:flex;align-items:center;gap:.5rem">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
   </nav>
 
-  <!-- MOBILE MENU -->
   <div class="mobile-menu" id="mobileMenu">
     <ul>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="results.html">Results</a></li>
-      <li><a href="guide.html">Roma Norte</a></li>
-      <li><a href="contact.html">Get Free Estimate →</a></li>
+      <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+      <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
+      <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+      <li><a href="guia.html" data-es="Roma Norte" data-en="Roma Norte">Roma Norte</a></li>
+      <li><a href="contacto.html" data-es="Cotizar mi propiedad →" data-en="Get Free Estimate →">Cotizar mi propiedad →</a></li>
     </ul>
+    <div class="lang-switcher" style="margin-top:2rem">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
   </div>
 
-  <!-- HERO -->
   <section class="hero">
-    <div class="hero-bg">
-      <div class="hero-overlay"></div>
-      <div class="hero-grid"></div>
-    </div>
+    <div class="hero-bg"><div class="hero-overlay"></div><div class="hero-grid"></div></div>
     <div class="hero-content">
       <div class="hero-badge">
         <span class="badge-dot"></span>
-        Specialists in Colonia Roma Norte
+        <span data-es="Especialistas en Colonia Roma Norte" data-en="Specialists in Colonia Roma Norte">Especialistas en Colonia Roma Norte</span>
       </div>
       <h1 class="hero-title">
-        We manage your<br/>
-        <em>Roma Norte</em><br/>
-        property.
+        <span data-es="Gestionamos tu<br/>propiedad en<br/><em>Roma Norte.</em>" data-en="We manage your<br/><em>Roma Norte</em><br/>property.">Gestionamos tu<br/>propiedad en<br/><em>Roma Norte.</em></span>
       </h1>
-      <p class="hero-sub">
-        Full-service Airbnb & short-term rental management. Photography, dynamic pricing, guests, cleaning, and monthly reports — all handled. You collect the income.
-      </p>
+      <p class="hero-sub" data-es="Gestión integral de Airbnb y renta corta. Fotografía profesional, precios dinámicos, huéspedes, limpieza e informes mensuales — todo resuelto. Tú cobras el ingreso." data-en="Full-service Airbnb & short-term rental management. Photography, dynamic pricing, guests, cleaning, and monthly reports — all handled. You collect the income.">Gestión integral de Airbnb y renta corta. Fotografía profesional, precios dinámicos, huéspedes, limpieza e informes mensuales — todo resuelto. Tú cobras el ingreso.</p>
       <div class="hero-actions">
-        <a href="contact.html" class="btn-primary">Get a Free Estimate →</a>
-        <a href="results.html" class="btn-ghost">See Our Results</a>
+        <a href="contacto.html" class="btn-primary" data-es="Cotizar mi propiedad →" data-en="Get a Free Estimate →">Cotizar mi propiedad →</a>
+        <a href="resultados.html" class="btn-ghost" data-es="Ver resultados" data-en="See Our Results">Ver resultados</a>
       </div>
       <div class="hero-proof">
         <div class="proof-item">
           <strong>4.67★</strong>
-          <span>Average Rating</span>
+          <span data-es="Calificación promedio" data-en="Average Rating">Calificación promedio</span>
         </div>
         <div class="proof-divider"></div>
         <div class="proof-item">
-          <strong>280+</strong>
-          <span>Guest Reviews</span>
+          <strong>283+</strong>
+          <span data-es="Reseñas de huéspedes" data-en="Guest Reviews">Reseñas de huéspedes</span>
         </div>
         <div class="proof-divider"></div>
         <div class="proof-item">
-          <strong>4+ Yrs</strong>
-          <span>Hosting in CDMX</span>
+          <strong>4+ Años</strong>
+          <span data-es="Hospedando en CDMX" data-en="Hosting in CDMX">Hospedando en CDMX</span>
         </div>
       </div>
     </div>
     <div class="hero-image-col">
       <div class="hero-img-frame">
-        <img src="https://l.icdbcdn.com/oh/63841469-7665-45ea-8985-4c6ca01443a5.jpg?w=900"
-             alt="Managed Roma Norte property by Roma Norte Host"
-             loading="eager"/>
+        <img src="https://l.icdbcdn.com/oh/63841469-7665-45ea-8985-4c6ca01443a5.jpg?w=900" alt="Propiedad gestionada en Roma Norte" loading="eager"/>
         <div class="hero-img-tag">
           <span class="tag-dot"></span>
-          Live managed property · Roma Norte
+          <span data-es="Propiedad activa · Roma Norte" data-en="Live managed property · Roma Norte">Propiedad activa · Roma Norte</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- MARQUEE -->
   <div class="marquee-strip">
     <div class="marquee-track">
-      <span>Full-Service Management</span>
-      <span class="mx">✦</span>
-      <span>Dynamic Pricing</span>
-      <span class="mx">✦</span>
-      <span>Professional Photography</span>
-      <span class="mx">✦</span>
-      <span>24/7 Guest Support</span>
-      <span class="mx">✦</span>
-      <span>Monthly Reports</span>
-      <span class="mx">✦</span>
-      <span>Colonia Roma Norte Specialists</span>
-      <span class="mx">✦</span>
-      <span>Direct Booking Channel</span>
-      <span class="mx">✦</span>
-      <span>Full-Service Management</span>
-      <span class="mx">✦</span>
-      <span>Dynamic Pricing</span>
-      <span class="mx">✦</span>
-      <span>Professional Photography</span>
-      <span class="mx">✦</span>
-      <span>24/7 Guest Support</span>
-      <span class="mx">✦</span>
-      <span>Monthly Reports</span>
-      <span class="mx">✦</span>
-      <span>Colonia Roma Norte Specialists</span>
-      <span class="mx">✦</span>
-      <span>Direct Booking Channel</span>
-      <span class="mx">✦</span>
+      <span data-es="Gestión Integral" data-en="Full-Service Management">Gestión Integral</span><span class="mx">✦</span>
+      <span data-es="Precios Dinámicos" data-en="Dynamic Pricing">Precios Dinámicos</span><span class="mx">✦</span>
+      <span data-es="Fotografía Profesional" data-en="Professional Photography">Fotografía Profesional</span><span class="mx">✦</span>
+      <span data-es="Atención 24/7" data-en="24/7 Guest Support">Atención 24/7</span><span class="mx">✦</span>
+      <span data-es="Reportes Mensuales" data-en="Monthly Reports">Reportes Mensuales</span><span class="mx">✦</span>
+      <span data-es="Especialistas Roma Norte" data-en="Roma Norte Specialists">Especialistas Roma Norte</span><span class="mx">✦</span>
+      <span data-es="Gestión Integral" data-en="Full-Service Management">Gestión Integral</span><span class="mx">✦</span>
+      <span data-es="Precios Dinámicos" data-en="Dynamic Pricing">Precios Dinámicos</span><span class="mx">✦</span>
+      <span data-es="Fotografía Profesional" data-en="Professional Photography">Fotografía Profesional</span><span class="mx">✦</span>
+      <span data-es="Atención 24/7" data-en="24/7 Guest Support">Atención 24/7</span><span class="mx">✦</span>
+      <span data-es="Reportes Mensuales" data-en="Monthly Reports">Reportes Mensuales</span><span class="mx">✦</span>
+      <span data-es="Especialistas Roma Norte" data-en="Roma Norte Specialists">Especialistas Roma Norte</span><span class="mx">✦</span>
     </div>
   </div>
 
-  <!-- VALUE PROPS -->
   <section class="value-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">Why Roma Norte Host</span>
-        <h2>Your property runs itself.<br/><em>We make that happen.</em></h2>
-        <p>Most property owners in Roma Norte leave money on the table with unoptimized listings, slow guest replies, and inconsistent cleaning. We fix all of that.</p>
+        <span class="section-tag" data-es="Por qué Roma Norte Host" data-en="Why Roma Norte Host">Por qué Roma Norte Host</span>
+        <h2><span data-es="Tu propiedad se administra sola.<br/><em>Nosotros lo hacemos posible.</em>" data-en="Your property runs itself.<br/><em>We make that happen.</em>">Tu propiedad se administra sola.<br/><em>Nosotros lo hacemos posible.</em></span></h2>
+        <p data-es="La mayoría de los propietarios en Roma Norte dejan dinero sobre la mesa con anuncios sin optimizar, respuestas lentas y limpieza inconsistente. Nosotros lo resolvemos todo." data-en="Most property owners in Roma Norte leave money on the table with unoptimized listings, slow guest replies, and inconsistent cleaning. We fix all of that.">La mayoría de los propietarios en Roma Norte dejan dinero sobre la mesa con anuncios sin optimizar, respuestas lentas y limpieza inconsistente. Nosotros lo resolvemos todo.</p>
       </div>
       <div class="value-grid">
-        <div class="value-card" style="--i:0">
-          <div class="value-icon">📸</div>
-          <h3>Professional Photography</h3>
-          <p>Listings with professional photos earn 40% more per booking. We arrange the shoot before your first guest checks in.</p>
-        </div>
-        <div class="value-card" style="--i:1">
-          <div class="value-icon">💸</div>
-          <h3>Dynamic Pricing</h3>
-          <p>We adjust your nightly rate based on demand, local events, and competitor data. More revenue without more work.</p>
-        </div>
-        <div class="value-card" style="--i:2">
-          <div class="value-icon">💬</div>
-          <h3>Guest Communication</h3>
-          <p>All messages answered within 1 hour. Pre-check-in instructions, during-stay support, checkout reminders — all handled.</p>
-        </div>
-        <div class="value-card" style="--i:3">
-          <div class="value-icon">🧹</div>
-          <h3>Cleaning & Turnover</h3>
-          <p>Professional cleaning between every stay. Fresh linens, hotel-quality presentation, restocked essentials.</p>
-        </div>
-        <div class="value-card" style="--i:4">
-          <div class="value-icon">🔧</div>
-          <h3>Maintenance</h3>
-          <p>Minor repairs coordinated through our vendor network. You hear about it on the monthly report — not at 11pm.</p>
-        </div>
-        <div class="value-card" style="--i:5">
-          <div class="value-icon">📊</div>
-          <h3>Monthly Reports</h3>
-          <p>Clear PDF with nights booked, revenue, expenses, and occupancy rate. Full transparency, zero surprises.</p>
-        </div>
+        <div class="value-card" style="--i:0"><div class="value-icon">📸</div><h3 data-es="Fotografía Profesional" data-en="Professional Photography">Fotografía Profesional</h3><p data-es="Los anuncios con fotos profesionales generan 40% más reservaciones. Coordinamos la sesión antes de tu primer huésped." data-en="Listings with professional photos earn 40% more per booking. We arrange the shoot before your first guest.">Los anuncios con fotos profesionales generan 40% más reservaciones. Coordinamos la sesión antes de tu primer huésped.</p></div>
+        <div class="value-card" style="--i:1"><div class="value-icon">💸</div><h3 data-es="Precios Dinámicos" data-en="Dynamic Pricing">Precios Dinámicos</h3><p data-es="Ajustamos tu tarifa nocturna según demanda, eventos locales y competencia. Más ingresos sin más trabajo." data-en="We adjust your nightly rate based on demand, local events, and competitor data. More revenue without more work.">Ajustamos tu tarifa nocturna según demanda, eventos locales y competencia. Más ingresos sin más trabajo.</p></div>
+        <div class="value-card" style="--i:2"><div class="value-icon">💬</div><h3 data-es="Comunicación con Huéspedes" data-en="Guest Communication">Comunicación con Huéspedes</h3><p data-es="Todos los mensajes respondidos en menos de 1 hora, 7 días a la semana. En español e inglés." data-en="All messages answered within 1 hour, 7 days a week. In Spanish and English.">Todos los mensajes respondidos en menos de 1 hora, 7 días a la semana. En español e inglés.</p></div>
+        <div class="value-card" style="--i:3"><div class="value-icon">🧹</div><h3 data-es="Limpieza y Rotación" data-en="Cleaning & Turnover">Limpieza y Rotación</h3><p data-es="Limpieza profesional entre cada estancia. Ropa de cama fresca, presentación de calidad hotelera." data-en="Professional cleaning between every stay. Fresh linens, hotel-quality presentation.">Limpieza profesional entre cada estancia. Ropa de cama fresca, presentación de calidad hotelera.</p></div>
+        <div class="value-card" style="--i:4"><div class="value-icon">🔧</div><h3 data-es="Mantenimiento" data-en="Maintenance">Mantenimiento</h3><p data-es="Reparaciones menores coordinadas con nuestra red de proveedores. Te enteras en el reporte mensual — no a las 11pm." data-en="Minor repairs coordinated through our vendor network. You hear about it on the monthly report — not at 11pm.">Reparaciones menores coordinadas con nuestra red de proveedores. Te enteras en el reporte mensual — no a las 11pm.</p></div>
+        <div class="value-card" style="--i:5"><div class="value-icon">📊</div><h3 data-es="Reportes Mensuales" data-en="Monthly Reports">Reportes Mensuales</h3><p data-es="PDF claro cada mes: noches reservadas, ingresos, gastos y tasa de ocupación. Transparencia total." data-en="Clear PDF every month: nights booked, revenue, expenses, and occupancy rate. Full transparency.">PDF claro cada mes: noches reservadas, ingresos, gastos y tasa de ocupación. Transparencia total.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- PROOF SECTION -->
+  <section class="team-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-es="El Equipo" data-en="The Team">El Equipo</span>
+        <h2><span data-es="Hosts verificados.<br/><em>Personas reales.</em>" data-en="Verified hosts.<br/><em>Real people.</em>">Hosts verificados.<br/><em>Personas reales.</em></span></h2>
+        <p data-es="No somos una empresa impersonal. Somos un equipo de tres hosts activos en Airbnb con 4+ años de experiencia en CDMX." data-en="We're not an impersonal company. We're a team of three active Airbnb hosts with 4+ years of experience in CDMX.">No somos una empresa impersonal. Somos un equipo de tres hosts activos en Airbnb con 4+ años de experiencia en CDMX.</p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card">
+          <img src="assets/agustin.jpg" alt="Agustin Cal" class="team-photo"/>
+          <span class="team-role" data-es="Host Principal" data-en="Primary Host">Host Principal</span>
+          <h3>Agustin Cal</h3>
+          <p data-es="Fundador y host principal. 4 años hospedando en CDMX, 283 reseñas, calificación 4.66★. Estrategia de precios y optimización de listings." data-en="Founder and primary host. 4 years hosting in CDMX, 283 reviews, 4.66★ rating. Pricing strategy and listing optimization.">Fundador y host principal. 4 años hospedando en CDMX, 283 reseñas, calificación 4.66★. Estrategia de precios y optimización de listings.</p>
+          <div class="team-airbnb">⭐ Superhost · Airbnb</div>
+        </div>
+        <div class="team-card">
+          <img src="assets/anali.jpg" alt="Anali Chavez" class="team-photo"/>
+          <span class="team-role" data-es="Co-host · Experiencia del Huésped" data-en="Co-host · Guest Experience">Co-host · Experiencia del Huésped</span>
+          <h3>Anali Chavez</h3>
+          <p data-es="Responsable de la comunicación con huéspedes. Garantiza que cada estancia sea una experiencia de 5 estrellas desde el primer mensaje." data-en="Responsible for guest communication. Ensures every stay is a 5-star experience from the first message.">Responsable de la comunicación con huéspedes. Garantiza que cada estancia sea una experiencia de 5 estrellas desde el primer mensaje.</p>
+          <div class="team-airbnb">⭐ Co-host verificado · Airbnb</div>
+        </div>
+        <div class="team-card">
+          <img src="assets/antonio.jpg" alt="Antonio Chavez" class="team-photo"/>
+          <span class="team-role" data-es="Co-host · Operaciones" data-en="Co-host · Operations">Co-host · Operaciones</span>
+          <h3>Antonio (Ale) Chavez</h3>
+          <p data-es="Encargado del calendario y la logística operativa. Asegura que cada rotación entre huéspedes sea impecable y puntual." data-en="Responsible for calendar and operational logistics. Ensures every guest turnover is flawless and on time.">Encargado del calendario y la logística operativa. Asegura que cada rotación entre huéspedes sea impecable y puntual.</p>
+          <div class="team-airbnb">⭐ Co-host verificado · Airbnb</div>
+        </div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem">
+        <a href="nosotros.html" class="btn-ghost" data-es="Conoce más sobre el equipo →" data-en="Meet the full team →">Conoce más sobre el equipo →</a>
+      </div>
+    </div>
+  </section>
+
   <section class="proof-section">
     <div class="container">
       <div class="proof-inner">
         <div class="proof-text">
-          <span class="section-tag light">Our Track Record</span>
-          <h2>We don't just promise results.<br/><em>StayWork CDMX is proof.</em></h2>
-          <p>Our guest-facing brand StayWork CDMX is what happens when we manage properties well. Built from the same properties we operate in Roma Norte and Narvarte.</p>
+          <div class="section-header" style="text-align:left;margin:0 0 2rem">
+            <span class="section-tag light" data-es="Nuestros Resultados" data-en="Our Track Record">Nuestros Resultados</span>
+            <h2 style="color:#fff"><span data-es="No prometemos resultados.<br/><em>StayWork CDMX es la prueba.</em>" data-en="We don't just promise results.<br/><em>StayWork CDMX is proof.</em>">No prometemos resultados.<br/><em>StayWork CDMX es la prueba.</em></span></h2>
+            <p style="color:rgba(255,255,255,.7)" data-es="Nuestra marca StayWork CDMX es lo que ocurre cuando gestionamos bien las propiedades. Construida desde las mismas propiedades que operamos en Roma Norte." data-en="Our guest brand StayWork CDMX is what happens when we manage properties well.">Nuestra marca StayWork CDMX es lo que ocurre cuando gestionamos bien las propiedades. Construida desde las mismas propiedades que operamos en Roma Norte.</p>
+          </div>
           <ul class="proof-list">
-            <li><span class="check">✓</span> 4.67 average star rating across all properties</li>
-            <li><span class="check">✓</span> 280+ verified guest reviews</li>
-            <li><span class="check">✓</span> 4+ years of continuous operation in CDMX</li>
-            <li><span class="check">✓</span> Direct booking channel to reduce Airbnb fees</li>
-            <li><span class="check">✓</span> Guests from 40+ countries hosted</li>
+            <li><span class="check">✓</span> <span data-es="4.67★ de promedio en todas las propiedades" data-en="4.67★ average rating across all properties">4.67★ de promedio en todas las propiedades</span></li>
+            <li><span class="check">✓</span> <span data-es="283+ reseñas verificadas de huéspedes" data-en="283+ verified guest reviews">283+ reseñas verificadas de huéspedes</span></li>
+            <li><span class="check">✓</span> <span data-es="4+ años de operación continua en CDMX" data-en="4+ years of continuous operation in CDMX">4+ años de operación continua en CDMX</span></li>
+            <li><span class="check">✓</span> <span data-es="Canal de reserva directa para reducir comisiones" data-en="Direct booking channel to reduce Airbnb fees">Canal de reserva directa para reducir comisiones</span></li>
           </ul>
-          <a href="results.html" class="btn-primary">See Full Results →</a>
+          <a href="resultados.html" class="btn-primary" data-es="Ver resultados completos →" data-en="See Full Results →">Ver resultados completos →</a>
         </div>
         <div class="proof-card-col">
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>"Perfect for working remotely. The desk setup with the big monitor was exactly what I needed. Fast internet, clean space, great location."</p>
-            <div class="reviewer">
-              <div class="reviewer-avatar">MK</div>
-              <div>
-                <strong>Marcus K.</strong>
-                <span>Remote worker · 3-week stay · Roma Norte</span>
-              </div>
-            </div>
-          </div>
-          <div class="review-card">
-            <div class="stars">★★★★★</div>
-            <p>"We stayed in Narvarte for a medical rotation. Super convenient, quiet, clean. Agustin and Anali were very responsive."</p>
-            <div class="reviewer">
-              <div class="reviewer-avatar">SL</div>
-              <div>
-                <strong>Sofia L.</strong>
-                <span>Medical professional · 1-month stay</span>
-              </div>
-            </div>
-          </div>
-          <div class="managed-badge">
-            <span>Guest brand:</span>
-            <a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX →</a>
-          </div>
+          <div class="review-card"><div class="stars">★★★★★</div><p>"Perfecto para trabajar remoto. El escritorio con el monitor grande fue exactamente lo que necesitaba. Internet rápido, espacio limpio, excelente ubicación."</p><div class="reviewer"><div class="reviewer-avatar">MK</div><div><strong>Marcus K.</strong><span data-es="Nómada digital · 3 semanas · Roma Norte" data-en="Remote worker · 3-week stay · Roma Norte">Nómada digital · 3 semanas · Roma Norte</span></div></div></div>
+          <div class="review-card"><div class="stars">★★★★★</div><p>"Nos quedamos en Narvarte durante nuestra rotación médica. Muy conveniente, tranquilo, limpio. Agustin y Anali siempre respondieron muy rápido."</p><div class="reviewer"><div class="reviewer-avatar">SL</div><div><strong>Sofia L.</strong><span data-es="Médico · 1 mes · Narvarte" data-en="Medical professional · 1-month stay">Médico · 1 mes · Narvarte</span></div></div></div>
+          <div class="managed-badge"><span data-es="Marca para huéspedes:" data-en="Guest brand:">Marca para huéspedes:</span><a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX →</a></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- PROCESS -->
   <section class="process-section">
     <div class="container">
       <div class="section-header">
-        <span class="section-tag">How It Works</span>
-        <h2>From your property to<br/><em>5-star reviews</em> in 3 steps.</h2>
+        <span class="section-tag" data-es="Cómo Funciona" data-en="How It Works">Cómo Funciona</span>
+        <h2><span data-es="De tu propiedad a<br/><em>reseñas de 5 estrellas</em> en 3 pasos." data-en="From your property to<br/><em>5-star reviews</em> in 3 steps.">De tu propiedad a<br/><em>reseñas de 5 estrellas</em> en 3 pasos.</span></h2>
       </div>
       <div class="steps">
-        <div class="step">
-          <div class="step-num">01</div>
-          <h3>Free Property Evaluation</h3>
-          <p>We visit your property in Roma Norte, assess its rental potential, and give you a monthly income estimate — free, no commitment.</p>
-        </div>
+        <div class="step"><div class="step-num">01</div><h3 data-es="Evaluación gratuita" data-en="Free Property Evaluation">Evaluación gratuita</h3><p data-es="Visitamos tu propiedad, evaluamos su potencial y te damos una estimación de ingreso mensual — gratis, sin compromiso." data-en="We visit your property, assess its rental potential, and give you a monthly income estimate — free, no commitment.">Visitamos tu propiedad, evaluamos su potencial y te damos una estimación de ingreso mensual — gratis, sin compromiso.</p></div>
         <div class="step-arrow">→</div>
-        <div class="step">
-          <div class="step-num">02</div>
-          <h3>Full Setup & Launch</h3>
-          <p>Professional photography, listing creation, smart lock setup, pricing calibration. Your property is live and earning within 2 weeks.</p>
-        </div>
+        <div class="step"><div class="step-num">02</div><h3 data-es="Setup y publicación" data-en="Full Setup & Launch">Setup y publicación</h3><p data-es="Fotografía profesional, anuncio, cerradura inteligente y calibración de precios. Tu propiedad generando ingresos en 2 semanas." data-en="Professional photography, listing, smart lock, and pricing. Your property earning within 2 weeks.">Fotografía profesional, anuncio, cerradura inteligente y calibración de precios. Tu propiedad generando ingresos en 2 semanas.</p></div>
         <div class="step-arrow">→</div>
-        <div class="step">
-          <div class="step-num">03</div>
-          <h3>Sit Back & Collect</h3>
-          <p>We handle every guest, every cleaning, every issue. You receive a monthly bank transfer and a clear income report.</p>
-        </div>
+        <div class="step"><div class="step-num">03</div><h3 data-es="Recibe tu dinero" data-en="Sit Back & Collect">Recibe tu dinero</h3><p data-es="Nos encargamos de cada huésped, cada limpieza, cada inconveniente. Tú recibes transferencia mensual + reporte." data-en="We handle every guest, every cleaning, every issue. You receive a monthly bank transfer and clear income report.">Nos encargamos de cada huésped, cada limpieza, cada inconveniente. Tú recibes transferencia mensual + reporte.</p></div>
       </div>
     </div>
   </section>
 
-  <!-- PRICING TEASER -->
   <section class="pricing-section">
     <div class="container">
       <div class="pricing-inner">
         <div class="pricing-text">
-          <span class="section-tag light">Simple Pricing</span>
-          <h2>We only win<br/><em>when you win.</em></h2>
-          <p>Our fee is a percentage of your rental revenue — no monthly retainers, no setup fees, no surprises. If your property earns more, we earn more. That alignment is intentional.</p>
-          <a href="services.html" class="btn-outline-light">View Full Pricing →</a>
+          <span class="section-tag light" data-es="Precios Simples" data-en="Simple Pricing">Precios Simples</span>
+          <h2 style="font-family:var(--font-display);font-size:2.4rem;color:#fff;line-height:1.2;margin-bottom:1rem"><span data-es="Ganamos solo cuando<br/><em style='color:var(--gold-lt);font-style:italic'>tú ganas.</em>" data-en="We only win<br/><em style='color:var(--gold-lt);font-style:italic'>when you win.</em>">Ganamos solo cuando<br/><em style="color:var(--gold-lt);font-style:italic">tú ganas.</em></span></h2>
+          <p style="color:rgba(255,255,255,.7);margin-bottom:2rem" data-es="Sin mensualidades, sin cargos de alta. Un porcentaje de tus ingresos — si tu propiedad gana más, nosotros ganamos más." data-en="No monthly retainers, no setup fees. A percentage of your revenue — if your property earns more, we earn more.">Sin mensualidades, sin cargos de alta. Un porcentaje de tus ingresos — si tu propiedad gana más, nosotros ganamos más.</p>
+          <a href="servicios.html" class="btn-outline-light" data-es="Ver precios completos →" data-en="View Full Pricing →">Ver precios completos →</a>
         </div>
         <div class="pricing-cards">
           <div class="pricing-card">
-            <div class="pricing-label">Standard</div>
+            <div class="pricing-label" data-es="Estándar" data-en="Standard">Estándar</div>
             <div class="pricing-pct">20<span>%</span></div>
-            <div class="pricing-desc">of monthly rental revenue</div>
+            <div class="pricing-desc" data-es="del ingreso mensual" data-en="of monthly revenue">del ingreso mensual</div>
             <ul>
-              <li>Listing setup & optimization</li>
-              <li>Guest communication</li>
-              <li>Cleaning coordination</li>
-              <li>Monthly reports</li>
+              <li data-es="Setup del anuncio" data-en="Listing setup">Setup del anuncio</li>
+              <li data-es="Comunicación con huéspedes" data-en="Guest communication">Comunicación con huéspedes</li>
+              <li data-es="Coordinación de limpieza" data-en="Cleaning coordination">Coordinación de limpieza</li>
+              <li data-es="Reportes mensuales" data-en="Monthly reports">Reportes mensuales</li>
             </ul>
           </div>
           <div class="pricing-card featured">
             <div class="pricing-label">Premium</div>
             <div class="pricing-pct">25<span>%</span></div>
-            <div class="pricing-desc">of monthly rental revenue</div>
+            <div class="pricing-desc" data-es="del ingreso mensual" data-en="of monthly revenue">del ingreso mensual</div>
             <ul>
-              <li>Everything in Standard</li>
-              <li>Dynamic pricing engine</li>
-              <li>Direct booking channel</li>
-              <li>Monthly strategy call</li>
+              <li data-es="Todo lo del plan Estándar" data-en="Everything in Standard">Todo lo del plan Estándar</li>
+              <li data-es="Precios dinámicos" data-en="Dynamic pricing">Precios dinámicos</li>
+              <li data-es="Canal de reserva directa" data-en="Direct booking channel">Canal de reserva directa</li>
+              <li data-es="Llamada estratégica mensual" data-en="Monthly strategy call">Llamada estratégica mensual</li>
             </ul>
           </div>
         </div>
@@ -315,57 +239,48 @@
     </div>
   </section>
 
-  <!-- CTA BAND -->
   <section class="cta-section">
     <div class="container">
       <div class="cta-inner">
-        <h2>Ready to put your Roma Norte property to work?</h2>
-        <p>Free evaluation. No commitment. We'll tell you exactly what your property can earn.</p>
+        <h2 data-es="¿Listo para que tu propiedad en Roma Norte trabaje por ti?" data-en="Ready to put your Roma Norte property to work?">¿Listo para que tu propiedad en Roma Norte trabaje por ti?</h2>
+        <p data-es="Evaluación gratuita. Sin compromiso. Te decimos exactamente cuánto puede generar tu propiedad." data-en="Free evaluation. No commitment. We'll tell you exactly what your property can earn.">Evaluación gratuita. Sin compromiso. Te decimos exactamente cuánto puede generar tu propiedad.</p>
         <div class="cta-actions">
-          <a href="contact.html" class="btn-primary-dark">Get a Free Estimate →</a>
+          <a href="contacto.html" class="btn-primary-dark" data-es="Cotizar mi propiedad →" data-en="Get a Free Estimate →">Cotizar mi propiedad →</a>
           <a href="mailto:hello@romanortehost.mx" class="btn-ghost-dark">✉ hello@romanortehost.mx</a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
   <footer class="footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
-          <div class="footer-logo">
-            <span class="logo-rn">Roma Norte</span>
-            <span class="logo-host">Host</span>
-          </div>
-          <p>Premier property management specialists in Colonia Roma Norte, Mexico City.</p>
+          <div class="footer-logo"><span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span></div>
+          <p data-es="Gestión premium de propiedades en Colonia Roma Norte, Ciudad de México." data-en="Premier property management in Colonia Roma Norte, Mexico City.">Gestión premium de propiedades en Colonia Roma Norte, Ciudad de México.</p>
           <a href="mailto:hello@romanortehost.mx">hello@romanortehost.mx</a>
         </div>
         <div class="footer-links">
-          <h4>Company</h4>
+          <h4 data-es="Empresa" data-en="Company">Empresa</h4>
           <ul>
-            <li><a href="services.html">Services</a></li>
-            <li><a href="results.html">Results</a></li>
-            <li><a href="guide.html">Roma Norte Guide</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+            <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
+            <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+            <li><a href="guia.html" data-es="Guía Roma Norte" data-en="Roma Norte Guide">Guía Roma Norte</a></li>
+            <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
           </ul>
         </div>
         <div class="footer-links">
-          <h4>Our Guest Brand</h4>
-          <ul>
-            <li><a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX</a></li>
-            <li><a href="https://stayworkcdmx.com/en/chic-nomad-loft---roma-norte-office-fast-wi-fi" target="_blank" rel="noopener">Roma Norte Loft</a></li>
-            <li><a href="https://stayworkcdmx.com/en/narvarte-2br2ba-entire-apt-parque-delta" target="_blank" rel="noopener">Narvarte 2BR</a></li>
-          </ul>
+          <h4 data-es="Nuestra Marca para Huéspedes" data-en="Our Guest Brand">Nuestra Marca para Huéspedes</h4>
+          <ul><li><a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX</a></li></ul>
         </div>
       </div>
       <div class="footer-bottom">
         <span>©2026 Roma Norte Host · Colonia Roma Norte, CDMX</span>
-        <span>Guest brand: <a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX</a></span>
+        <span><span data-es="Marca para huéspedes:" data-en="Guest brand:">Marca para huéspedes:</span> <a href="https://stayworkcdmx.com" target="_blank">StayWork CDMX</a></span>
       </div>
     </div>
   </footer>
-
   <script src="js/main.js"></script>
 </body>
 </html>

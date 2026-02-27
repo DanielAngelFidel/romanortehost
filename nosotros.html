@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nosotros — Roma Norte Host | El equipo detrás de StayWork CDMX</title>
+  <meta name="description" content="Somos Agustin, Anali y Ale — un equipo de tres hosts verificados en Airbnb con 4+ años hospedando en Roma Norte y Narvarte, CDMX."/>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    .team-full-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+      margin-bottom: 5rem;
+    }
+    .team-full-card {
+      background: #fff; border: 1px solid rgba(26,61,40,.08);
+      border-radius: 16px; overflow: hidden;
+      transition: transform .3s, box-shadow .3s;
+    }
+    .team-full-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(26,61,40,.1); }
+    .team-full-photo {
+      width: 100%; aspect-ratio: 1/1; overflow: hidden;
+      background: linear-gradient(135deg, var(--teal), var(--forest));
+      display: flex; align-items: center; justify-content: center;
+    }
+    .team-full-photo img {
+      width: 100%; height: 100%; object-fit: cover;
+      filter: grayscale(10%);
+      transition: filter .3s, transform .4s;
+    }
+    .team-full-card:hover .team-full-photo img { filter: grayscale(0%); transform: scale(1.04); }
+    .team-full-body { padding: 2rem; }
+    .team-full-body .team-role { display: block; margin-bottom: .5rem; }
+    .team-full-body h2 { font-family: var(--font-display); font-size: 1.5rem; color: var(--forest); margin-bottom: .8rem; }
+    .team-full-body p { font-size: .9rem; color: var(--gray); line-height: 1.7; margin-bottom: 1rem; }
+    .team-stats { display: flex; gap: 1.2rem; margin-top: 1rem; flex-wrap: wrap; }
+    .team-stat { text-align: center; }
+    .team-stat strong { display: block; font-family: var(--font-display); font-size: 1.4rem; color: var(--forest); }
+    .team-stat span { font-size: .72rem; color: var(--lgray); }
+    .story-section { padding: 7rem 0; background: var(--forest); }
+    .story-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; }
+    .story-text h2 { font-family: var(--font-display); font-size: 2.2rem; color: #fff; line-height: 1.2; margin-bottom: 1.2rem; }
+    .story-text h2 em { color: var(--gold-lt); font-style: italic; }
+    .story-text p { color: rgba(255,255,255,.75); font-size: .95rem; line-height: 1.75; margin-bottom: 1rem; }
+    .story-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+    .story-stat { background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.1); border-radius: 12px; padding: 1.2rem; text-align: center; }
+    .story-stat strong { display: block; font-family: var(--font-display); font-size: 2rem; color: var(--gold-lt); }
+    .story-stat span { font-size: .78rem; color: rgba(255,255,255,.5); }
+    .values-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; margin-bottom: 5rem; }
+    @media(max-width: 900px) {
+      .team-full-grid { grid-template-columns: 1fr; max-width: 400px; margin: 0 auto 3rem; }
+      .story-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .values-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav" id="nav">
+    <a href="index.html" class="nav-logo">
+      <span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+      <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
+      <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+      <li><a href="guia.html" data-es="Roma Norte" data-en="Roma Norte">Roma Norte</a></li>
+      <li><a href="contacto.html" class="nav-cta" data-es="Cotizar mi propiedad" data-en="Get Free Estimate">Cotizar mi propiedad</a></li>
+    </ul>
+    <div style="display:flex;align-items:center;gap:.5rem">
+      <div class="lang-switcher">
+        <button class="lang-btn active" data-lang="es">ES</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+      <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+    </div>
+  </nav>
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="resultados.html">Resultados</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="guia.html">Roma Norte</a></li>
+      <li><a href="contacto.html">Cotizar mi propiedad →</a></li>
+    </ul>
+    <div class="lang-switcher" style="margin-top:2rem">
+      <button class="lang-btn active" data-lang="es">ES</button>
+      <button class="lang-btn" data-lang="en">EN</button>
+    </div>
+  </div>
+
+  <div class="page-hero">
+    <div class="container">
+      <span class="section-tag" data-es="El Equipo" data-en="The Team">El Equipo</span>
+      <h1 data-es="Somos Agustin, Anali y Ale.<br/><em>Hosts reales en Roma Norte.</em>" data-en="We are Agustin, Anali and Ale.<br/><em>Real hosts in Roma Norte.</em>">Somos Agustin, Anali y Ale.<br/><em>Hosts reales en Roma Norte.</em></h1>
+      <p data-es="No somos una empresa impersonal. Somos tres personas que hospedamos activamente en Airbnb y sabemos exactamente lo que necesita tu propiedad para rendir al máximo." data-en="We're not an impersonal company. We're three people actively hosting on Airbnb who know exactly what your property needs to perform at its best.">No somos una empresa impersonal. Somos tres personas que hospedamos activamente en Airbnb y sabemos exactamente lo que necesita tu propiedad para rendir al máximo.</p>
+    </div>
+  </div>
+
+  <section class="content-section">
+    <div class="container">
+
+      <div class="team-full-grid">
+
+        <!-- AGUSTIN -->
+        <div class="team-full-card">
+          <div class="team-full-photo">
+            <img src="assets/agustin.jpg" alt="Agustin Cal — Host Principal"/>
+          </div>
+          <div class="team-full-body">
+            <span class="team-role" data-es="Host Principal · Fundador" data-en="Primary Host · Founder">Host Principal · Fundador</span>
+            <h2>Agustin Cal</h2>
+            <p data-es="Agustin lleva 4 años como host en Airbnb en CDMX. Construyó el portafolio de propiedades desde cero, desarrolló la estrategia de precios dinámicos y creó la marca StayWork CDMX para atraer nómadas digitales y viajeros de negocios." data-en="Agustin has been an Airbnb host in CDMX for 4 years. He built the property portfolio from scratch, developed the dynamic pricing strategy, and created the StayWork CDMX brand to attract digital nomads and business travelers.">Agustin lleva 4 años como host en Airbnb en CDMX. Construyó el portafolio de propiedades desde cero, desarrolló la estrategia de precios dinámicos y creó la marca StayWork CDMX para atraer nómadas digitales y viajeros de negocios.</p>
+            <p data-es="Especialista en optimización de listings, fotografía y estrategia de revenue management para renta corta en mercados urbanos." data-en="Specialist in listing optimization, photography, and revenue management strategy for short-term rentals in urban markets.">Especialista en optimización de listings, fotografía y estrategia de revenue management para renta corta en mercados urbanos.</p>
+            <div class="team-stats">
+              <div class="team-stat"><strong>4+</strong><span data-es="años como host" data-en="years hosting">años como host</span></div>
+              <div class="team-stat"><strong>283</strong><span data-es="reseñas" data-en="reviews">reseñas</span></div>
+              <div class="team-stat"><strong>4.66★</strong><span data-es="calificación" data-en="rating">calificación</span></div>
+            </div>
+            <div class="team-airbnb" style="margin-top:1rem">⭐ Superhost verificado · Airbnb</div>
+          </div>
+        </div>
+
+        <!-- ANALI -->
+        <div class="team-full-card">
+          <div class="team-full-photo">
+            <img src="assets/anali.jpg" alt="Anali Chavez — Co-host"/>
+          </div>
+          <div class="team-full-body">
+            <span class="team-role" data-es="Co-host · Experiencia del Huésped" data-en="Co-host · Guest Experience">Co-host · Experiencia del Huésped</span>
+            <h2>Anali Chavez</h2>
+            <p data-es="Anali es la voz detrás de cada conversación con huéspedes. Se encarga de que cada persona que se hospede en nuestras propiedades reciba respuesta rápida, instrucciones claras y soporte durante toda su estancia." data-en="Anali is the voice behind every guest conversation. She ensures every person staying in our properties receives quick responses, clear instructions, and support throughout their stay.">Anali es la voz detrás de cada conversación con huéspedes. Se encarga de que cada persona que se hospede en nuestras propiedades reciba respuesta rápida, instrucciones claras y soporte durante toda su estancia.</p>
+            <p data-es="Su atención al detalle y calidez son la razón principal por la que nuestras reseñas destacan la excelente comunicación del equipo." data-en="Her attention to detail and warmth are the main reason our reviews consistently highlight the team's excellent communication.">Su atención al detalle y calidez son la razón principal por la que nuestras reseñas destacan la excelente comunicación del equipo.</p>
+            <div class="team-stats">
+              <div class="team-stat"><strong>&lt;1h</strong><span data-es="tiempo de respuesta" data-en="response time">tiempo de respuesta</span></div>
+              <div class="team-stat"><strong>ES·EN</strong><span data-es="idiomas" data-en="languages">idiomas</span></div>
+            </div>
+            <div class="team-airbnb" style="margin-top:1rem">⭐ Co-host verificado · Airbnb</div>
+          </div>
+        </div>
+
+        <!-- ANTONIO -->
+        <div class="team-full-card">
+          <div class="team-full-photo">
+            <img src="assets/antonio.jpg" alt="Antonio Alejandro Chavez — Co-host Operaciones"/>
+          </div>
+          <div class="team-full-body">
+            <span class="team-role" data-es="Co-host · Operaciones" data-en="Co-host · Operations">Co-host · Operaciones</span>
+            <h2>Antonio (Ale) Chavez</h2>
+            <p data-es="Ale gestiona el calendario, la coordinación entre huéspedes y la logística operativa del día a día. Asegura que cada transición entre estancias sea puntual, limpia e impecable — sin que los propietarios tengan que intervenir." data-en="Ale manages the calendar, guest transitions, and day-to-day operational logistics. He ensures every turnover between stays is timely, clean, and flawless — without owners needing to get involved.">Ale gestiona el calendario, la coordinación entre huéspedes y la logística operativa del día a día. Asegura que cada transición entre estancias sea puntual, limpia e impecable — sin que los propietarios tengan que intervenir.</p>
+            <p data-es="Su rol es invisible para los huéspedes — pero es la razón por la que todo funciona sin fricciones." data-en="His role is invisible to guests — but it's the reason everything runs without friction.">Su rol es invisible para los huéspedes — pero es la razón por la que todo funciona sin fricciones.</p>
+            <div class="team-stats">
+              <div class="team-stat"><strong>3</strong><span data-es="propiedades activas" data-en="active properties">propiedades activas</span></div>
+              <div class="team-stat"><strong>0</strong><span data-es="rotaciones fallidas" data-en="failed turnovers">rotaciones fallidas</span></div>
+            </div>
+            <div class="team-airbnb" style="margin-top:1rem">⭐ Co-host verificado · Airbnb</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- STORY -->
+  <section class="story-section">
+    <div class="container">
+      <div class="story-inner">
+        <div class="story-text">
+          <span class="section-tag light" data-es="Nuestra Historia" data-en="Our Story">Nuestra Historia</span>
+          <h2 data-es="Empezamos como propietarios.<br/><em>Ahora gestionamos para otros.</em>" data-en="We started as owners.<br/><em>Now we manage for others.</em>">Empezamos como propietarios.<br/><em>Ahora gestionamos para otros.</em></h2>
+          <p data-es="Hace 4 años Agustin publicó su primer listing en Airbnb en Roma Norte. Lo aprendió todo por ensayo y error: fotografía, precios, comunicación, limpieza, mantenimiento. Eventualmente construyó un sistema que funciona — y los resultados lo demuestran." data-en="4 years ago Agustin published his first Airbnb listing in Roma Norte. He learned everything by trial and error: photography, pricing, communication, cleaning, maintenance. Eventually he built a system that works — and the results show it.">Hace 4 años Agustin publicó su primer listing en Airbnb en Roma Norte. Lo aprendió todo por ensayo y error: fotografía, precios, comunicación, limpieza, mantenimiento. Eventualmente construyó un sistema que funciona — y los resultados lo demuestran.</p>
+          <p data-es="Con Anali y Ale sumados al equipo, ese sistema escala. Hoy gestionamos 3 propiedades activas bajo la marca StayWork CDMX y estamos listos para gestionar la tuya también." data-en="With Anali and Ale joining the team, that system scales. Today we manage 3 active properties under the StayWork CDMX brand and are ready to manage yours too.">Con Anali y Ale sumados al equipo, ese sistema escala. Hoy gestionamos 3 propiedades activas bajo la marca StayWork CDMX y estamos listos para gestionar la tuya también.</p>
+        </div>
+        <div class="story-stats">
+          <div class="story-stat"><strong>4.67★</strong><span data-es="Calificación promedio" data-en="Average Rating">Calificación promedio</span></div>
+          <div class="story-stat"><strong>283+</strong><span data-es="Reseñas verificadas" data-en="Verified Reviews">Reseñas verificadas</span></div>
+          <div class="story-stat"><strong>4+</strong><span data-es="Años en CDMX" data-en="Years in CDMX">Años en CDMX</span></div>
+          <div class="story-stat"><strong>3</strong><span data-es="Propiedades activas" data-en="Active Properties">Propiedades activas</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALUES -->
+  <section class="value-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-es="Cómo Trabajamos" data-en="How We Work">Cómo Trabajamos</span>
+        <h2><span data-es="Los principios detrás de<br/><em>cada propiedad que gestionamos.</em>" data-en="The principles behind<br/><em>every property we manage.</em>">Los principios detrás de<br/><em>cada propiedad que gestionamos.</em></span></h2>
+      </div>
+      <div class="value-grid">
+        <div class="value-card"><div class="value-icon">🎯</div><h3 data-es="Solo Roma Norte" data-en="Roma Norte Only">Solo Roma Norte</h3><p data-es="Nos especializamos exclusivamente en Colonia Roma Norte. No tomamos propiedades en otras colonias porque la especialización nos da ventaja real en precios, demanda y posicionamiento." data-en="We specialize exclusively in Colonia Roma Norte. We don't take properties in other neighborhoods because specialization gives us a real advantage in pricing, demand, and positioning.">Nos especializamos exclusivamente en Colonia Roma Norte. No tomamos propiedades en otras colonias porque la especialización nos da ventaja real en precios, demanda y posicionamiento.</p></div>
+        <div class="value-card"><div class="value-icon">🤝</div><h3 data-es="Alineación Total" data-en="Full Alignment">Alineación Total</h3><p data-es="Cobramos un porcentaje de tus ingresos — nunca una tarifa fija. Si tu propiedad no gana, nosotros no ganamos. Esa alineación es intencional y no negociable." data-en="We charge a percentage of your income — never a fixed fee. If your property doesn't earn, we don't earn. That alignment is intentional and non-negotiable.">Cobramos un porcentaje de tus ingresos — nunca una tarifa fija. Si tu propiedad no gana, nosotros no ganamos.</p></div>
+        <div class="value-card"><div class="value-icon">📱</div><h3 data-es="Transparencia Total" data-en="Full Transparency">Transparencia Total</h3><p data-es="Reporte mensual con todos los números. Tienes acceso al calendario de reservas en tiempo real. Sin sorpresas, sin letra chica." data-en="Monthly report with all numbers. You have access to the booking calendar in real time. No surprises, no fine print.">Reporte mensual con todos los números. Tienes acceso al calendario de reservas en tiempo real. Sin sorpresas, sin letra chica.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-inner">
+        <h2 data-es="¿Quieres trabajar con nosotros?" data-en="Want to work with us?">¿Quieres trabajar con nosotros?</h2>
+        <p data-es="Evaluación gratuita de tu propiedad en Roma Norte. Sin compromiso." data-en="Free evaluation of your Roma Norte property. No commitment.">Evaluación gratuita de tu propiedad en Roma Norte. Sin compromiso.</p>
+        <div class="cta-actions">
+          <a href="contacto.html" class="btn-primary-dark" data-es="Cotizar mi propiedad →" data-en="Get a Free Estimate →">Cotizar mi propiedad →</a>
+          <a href="resultados.html" class="btn-ghost-dark" data-es="Ver nuestros resultados" data-en="See Our Results">Ver nuestros resultados</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo"><span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span></div>
+          <p data-es="Gestión premium de propiedades en Colonia Roma Norte, CDMX." data-en="Premier property management in Colonia Roma Norte, CDMX.">Gestión premium de propiedades en Colonia Roma Norte, CDMX.</p>
+          <a href="mailto:hello@romanortehost.mx">hello@romanortehost.mx</a>
+        </div>
+        <div class="footer-links">
+          <h4 data-es="Empresa" data-en="Company">Empresa</h4>
+          <ul>
+            <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
+            <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
+            <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
+            <li><a href="guia.html" data-es="Guía Roma Norte" data-en="Roma Norte Guide">Guía Roma Norte</a></li>
+            <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4 data-es="Nuestra Marca para Huéspedes" data-en="Our Guest Brand">Nuestra Marca para Huéspedes</h4>
+          <ul><li><a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX</a></li></ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>©2026 Roma Norte Host · Colonia Roma Norte, CDMX</span>
+        <span><span data-es="Marca para huéspedes:" data-en="Guest brand:">Marca para huéspedes:</span> <a href="https://stayworkcdmx.com" target="_blank">StayWork CDMX</a></span>
+      </div>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

@@ -578,3 +578,80 @@ img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .page-hero p { color: rgba(255,255,255,.7); max-width: 560px; margin: 0 auto; line-height: 1.7; }
 
 .content-section { padding: 6rem 0; }
+
+/* ─── LANGUAGE TOGGLE ─────────────────────────────── */
+.lang-switcher {
+  display: flex; align-items: center;
+  gap: 2px;
+  background: rgba(26,61,40,.08);
+  border-radius: 100px;
+  padding: 3px;
+  margin-left: .5rem;
+}
+.lang-btn {
+  border: none; background: none; cursor: pointer;
+  padding: .28rem .65rem;
+  font-family: var(--font-body);
+  font-size: .72rem; font-weight: 700;
+  letter-spacing: .06em;
+  color: var(--lgray);
+  border-radius: 100px;
+  transition: all .2s;
+}
+.lang-btn.active {
+  background: var(--forest);
+  color: #fff;
+}
+
+/* ─── TEAM CARDS ──────────────────────────────────── */
+.team-section { padding: 7rem 0; background: var(--cream); }
+.team-grid {
+  display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;
+  max-width: 860px; margin: 0 auto;
+}
+.team-card {
+  background: #fff;
+  border: 1px solid rgba(26,61,40,.08);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  text-align: center;
+  transition: transform .3s, box-shadow .3s;
+}
+.team-card:hover { transform: translateY(-5px); box-shadow: 0 20px 50px rgba(26,61,40,.1); }
+.team-photo {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 0 auto 1.2rem;
+  border: 3px solid rgba(42,171,138,.2);
+  display: block;
+}
+.team-photo-placeholder {
+  width: 100px; height: 100px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--teal), var(--forest));
+  margin: 0 auto 1.2rem;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--font-display);
+  font-size: 2rem; color: #fff; font-weight: 700;
+}
+.team-role {
+  display: inline-block;
+  font-size: .7rem; font-weight: 700;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: var(--teal);
+  margin-bottom: .6rem;
+}
+.team-card h3 { font-family: var(--font-display); font-size: 1.3rem; color: var(--forest); margin-bottom: .5rem; }
+.team-card p { font-size: .85rem; color: var(--gray); line-height: 1.65; }
+.team-airbnb {
+  display: inline-flex; align-items: center; gap: .4rem;
+  margin-top: .8rem;
+  font-size: .75rem; color: var(--lgray);
+  background: rgba(26,61,40,.05); border-radius: 100px;
+  padding: .3rem .8rem;
+}
+
+@media(max-width: 768px) {
+  .team-grid { grid-template-columns: 1fr; max-width: 360px; }
+}

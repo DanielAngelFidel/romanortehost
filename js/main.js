@@ -18,8 +18,33 @@ mobileMenu?.querySelectorAll('a').forEach(a => {
   });
 });
 
-// Intersection observer for fade-in cards
+// ── LANGUAGE TOGGLE ──────────────────────────────────
+const savedLang = localStorage.getItem('rnh-lang') || 'es';
+document.documentElement.setAttribute('lang', savedLang);
+
+function applyLang(lang) {
+  document.documentElement.setAttribute('lang', lang);
+  localStorage.setItem('rnh-lang', lang);
+  document.querySelectorAll('[data-es]').forEach(el => {
+    el.innerHTML = lang === 'es' ? el.dataset.es : el.dataset.en;
+  });
+  document.querySelectorAll('[data-es-placeholder]').forEach(el => {
+    el.placeholder = lang === 'es' ? el.dataset.esPlaceholder : el.dataset.enPlaceholder;
+  });
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.lang === lang);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  applyLang(savedLang);
+  document.querySelectorAll('.lang-btn').forEach(btn => {
+    btn.addEventListener('click', () => applyLang(btn.dataset.lang));
+  });
+});
+
+// Intersection observer for fade-in
 const observer = new IntersectionObserver((entries) => {
   entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1 });
-document.querySelectorAll('.value-card, .step, .review-card').forEach(el => observer.observe(el));
+document.querySelectorAll('.value-card, .step, .review-card, .team-card').forEach(el => observer.observe(el));
