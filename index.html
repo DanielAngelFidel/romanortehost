@@ -1,409 +1,418 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Roma Norte Host — Gestión de propiedades en Colonia Roma Norte, CDMX</title>
-  <meta name="description" content="Gestión integral de Airbnb y renta corta en Colonia Roma Norte, Ciudad de México. Nos encargamos de todo — tú cobras el ingreso."/>
+  <title>Roma Norte Host | Gestion patrimonial de renta corta en Roma Norte</title>
+  <meta name="description" content="Gestion patrimonial de departamentos para renta corta en Roma Norte, CDMX: ingreso neto, operacion documentada, seleccion de huespedes, mantenimiento y cumplimiento."/>
+  <link rel="canonical" href="https://romanortehost.mx/"/>
   <link rel="preconnect" href="https://fonts.googleapis.com"/>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet"/>
-  <link rel="stylesheet" href="css/style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ["Inter", "system-ui", "sans-serif"],
+            serif: ["Playfair Display", "Georgia", "serif"]
+          },
+          colors: {
+            brand: {
+              coral: "#ff5a5f",
+              teal: "#00a699",
+              ink: "#101217",
+              graphite: "#252932",
+              ivory: "#faf8f4"
+            }
+          },
+          boxShadow: {
+            premium: "0 28px 90px rgba(16, 18, 23, .16)"
+          }
+        }
+      }
+    }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Roma Norte Host",
+    "url": "https://romanortehost.mx",
+    "email": "hello@romanortehost.mx",
+    "areaServed": "Roma Norte, Ciudad de Mexico",
+    "description": "Gestion patrimonial de propiedades de renta corta en Roma Norte, CDMX."
+  }
+  </script>
 </head>
-<body>
-
-  <nav class="nav" id="nav">
-    <a href="index.html" class="nav-logo">
-      <span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span>
-    </a>
-    <ul class="nav-links">
-      <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
-      <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
-      <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
-      <li><a href="guia.html" data-es="Roma Norte" data-en="Roma Norte">Roma Norte</a></li>
-      <li><a href="contacto.html" class="nav-cta" data-es="Cotizar mi propiedad" data-en="Get Free Estimate">Cotizar mi propiedad</a></li>
-    </ul>
-    <div style="display:flex;align-items:center;gap:.5rem">
-      <div class="lang-switcher">
-        <button class="lang-btn active" data-lang="es">ES</button>
-        <button class="lang-btn" data-lang="en">EN</button>
-      </div>
-      <button class="nav-burger" id="burger"><span></span><span></span><span></span></button>
+<body class="bg-brand-ivory font-sans text-brand-ink antialiased">
+  <header class="absolute inset-x-0 top-0 z-40">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-5 py-5 sm:px-6 lg:px-8">
+      <a href="/" class="flex items-baseline gap-1 text-lg font-extrabold tracking-tight text-white">
+        <span>Roma Norte</span><span class="font-semibold text-brand-teal">Host</span>
+      </a>
+      <nav class="hidden items-center gap-8 text-sm font-semibold text-white/80 lg:flex">
+        <a href="/servicios" class="transition hover:text-white">Servicios</a>
+        <a href="/resultados" class="transition hover:text-white">Resultados</a>
+        <a href="/about" class="transition hover:text-white">Nosotros</a>
+        <a href="/roma-norte" class="transition hover:text-white">Roma Norte</a>
+      </nav>
+      <a href="/contacto" class="rounded-full border border-white/30 bg-white px-5 py-2.5 text-sm font-bold text-brand-ink shadow-sm transition hover:bg-brand-coral hover:text-white">Evaluacion patrimonial</a>
     </div>
-  </nav>
+  </header>
 
-  <div class="mobile-menu" id="mobileMenu">
-    <ul>
-      <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
-      <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
-      <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
-      <li><a href="guia.html" data-es="Roma Norte" data-en="Roma Norte">Roma Norte</a></li>
-      <li><a href="contacto.html" data-es="Cotizar mi propiedad →" data-en="Get Free Estimate →">Cotizar mi propiedad →</a></li>
-    </ul>
-    <div class="lang-switcher" style="margin-top:2rem">
-      <button class="lang-btn active" data-lang="es">ES</button>
-      <button class="lang-btn" data-lang="en">EN</button>
-    </div>
-  </div>
+  <main>
+    <section class="relative min-h-[88vh] overflow-hidden bg-brand-ink">
+      <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1800&q=85" alt="Interior premium de departamento gestionado" class="absolute inset-0 h-full w-full object-cover opacity-70"/>
+      <div class="absolute inset-0 bg-gradient-to-r from-black/88 via-black/70 to-black/35"></div>
+      <div class="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-brand-ivory to-transparent"></div>
 
-  <section class="hero">
-    <div class="hero-bg"><div class="hero-overlay"></div><div class="hero-grid"></div></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="badge-dot"></span>
-        <span data-es="⚖️ Gestión con cumplimiento · Máximo ingreso · 180 noches" data-en="⚖️ Compliant management · Maximum income · 180 nights">⚖️ Gestión con cumplimiento · Máximo ingreso · 180 noches</span>
-      </div>
-      <h1 class="hero-title">
-        <span data-es="180 noches.<br/><em>El máximo ingreso.</em><br/>Cero estrés." data-en="180 nights.<br/><em>Maximum income.</em><br/>Zero stress.">180 noches.<br/><em>El máximo ingreso.</em><br/>Cero estrés.</span>
-      </h1>
-      <p class="hero-sub" data-es="La CDMX limita tu Airbnb a 180 noches al año. Nosotros nos encargamos de que cada noche rinda al máximo — precios dinámicos, huéspedes, limpieza, reportes — y siempre dentro del reglamento." data-en="CDMX limits your Airbnb to 180 nights per year. We make sure every night performs at its best — dynamic pricing, guests, cleaning, reports — always within regulations.">La CDMX limita tu Airbnb a 180 noches al año. Nosotros nos encargamos de que cada noche rinda al máximo — precios dinámicos, huéspedes, limpieza, reportes — y siempre dentro del reglamento.</p>
-      <div class="hero-actions">
-        <a href="contacto.html" class="btn-primary" data-es="Cotizar mi propiedad →" data-en="Get a Free Estimate →">Cotizar mi propiedad →</a>
-        <a href="resultados.html" class="btn-ghost" data-es="Ver resultados" data-en="See Our Results">Ver resultados</a>
-      </div>
-      <div class="hero-proof">
-        <div class="proof-item">
-          <strong>4.67★</strong>
-          <span data-es="Calificación promedio" data-en="Average Rating">Calificación promedio</span>
-        </div>
-        <div class="proof-divider"></div>
-        <div class="proof-item">
-          <strong>283+</strong>
-          <span data-es="Reseñas de huéspedes" data-en="Guest Reviews">Reseñas de huéspedes</span>
-        </div>
-        <div class="proof-divider"></div>
-        <div class="proof-item">
-          <strong>4+ Años</strong>
-          <span data-es="Hospedando en CDMX" data-en="Hosting in CDMX">Hospedando en CDMX</span>
-        </div>
-      </div>
-    </div>
-    <div class="hero-image-col">
-      <div class="hero-img-frame">
-        <img src="https://l.icdbcdn.com/oh/63841469-7665-45ea-8985-4c6ca01443a5.jpg?w=900" alt="Propiedad gestionada en Roma Norte" loading="eager"/>
-        <div class="hero-img-tag">
-          <span class="tag-dot"></span>
-          <span data-es="Propiedad activa · Roma Norte" data-en="Live managed property · Roma Norte">Propiedad activa · Roma Norte</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="marquee-strip">
-    <div class="marquee-track">
-      <span data-es="Gestión Integral" data-en="Full-Service Management">Gestión Integral</span><span class="mx">✦</span>
-      <span data-es="Precios Dinámicos" data-en="Dynamic Pricing">Precios Dinámicos</span><span class="mx">✦</span>
-      <span data-es="Fotografía Profesional" data-en="Professional Photography">Fotografía Profesional</span><span class="mx">✦</span>
-      <span data-es="Atención 24/7" data-en="24/7 Guest Support">Atención 24/7</span><span class="mx">✦</span>
-      <span data-es="Reportes Mensuales" data-en="Monthly Reports">Reportes Mensuales</span><span class="mx">✦</span>
-      <span data-es="Especialistas Roma Norte" data-en="Roma Norte Specialists">Especialistas Roma Norte</span><span class="mx">✦</span>
-      <span data-es="Gestión Integral" data-en="Full-Service Management">Gestión Integral</span><span class="mx">✦</span>
-      <span data-es="Precios Dinámicos" data-en="Dynamic Pricing">Precios Dinámicos</span><span class="mx">✦</span>
-      <span data-es="Fotografía Profesional" data-en="Professional Photography">Fotografía Profesional</span><span class="mx">✦</span>
-      <span data-es="Atención 24/7" data-en="24/7 Guest Support">Atención 24/7</span><span class="mx">✦</span>
-      <span data-es="Reportes Mensuales" data-en="Monthly Reports">Reportes Mensuales</span><span class="mx">✦</span>
-      <span data-es="Especialistas Roma Norte" data-en="Roma Norte Specialists">Especialistas Roma Norte</span><span class="mx">✦</span>
-    </div>
-  </div>
-
-  <!-- COMPLIANCE / 180 DAYS -->
-  <section class="compliance-section">
-    <div class="container">
-      <div class="compliance-alert">
-        <div class="alert-icon">⚠️</div>
-        <div class="alert-text">
-          <strong data-es="Ley de Plataformas Digitales · CDMX" data-en="Digital Platforms Law · CDMX">Ley de Plataformas Digitales · CDMX</strong>
-          <span data-es="Límite de 180 noches al año por propiedad en renta corta — ¿las estás aprovechando?" data-en="180-night annual limit per property on short-term rental — are you making the most of them?">Límite de 180 noches al año por propiedad en renta corta — ¿las estás aprovechando?</span>
-        </div>
-      </div>
-      <div class="compliance-grid">
-        <div class="compliance-text">
-          <span class="section-tag" data-es="El Reglamento Que Muchos Ignoran" data-en="The Regulation Many Ignore">El Reglamento Que Muchos Ignoran</span>
-          <h2 data-es="Tu propiedad tiene un<br/><em>límite de 180 noches.</em><br/>¿Las estás usando bien?" data-en="Your property has a<br/><em>180-night limit.</em><br/>Are you using them right?">Tu propiedad tiene un<br/><em>límite de 180 noches.</em><br/>¿Las estás usando bien?</h2>
-          <p data-es="Desde 2020, la CDMX limita las rentas cortas en Airbnb a 180 noches por año por propiedad. Muchos propietarios llegan al límite sin haber maximizado sus ingresos — o peor, lo superan sin saberlo y enfrentan multas o suspensión del listing." data-en="Since 2020, CDMX limits short-term rentals on Airbnb to 180 nights per year per property. Many owners hit the limit without maximizing income — or worse, exceed it unknowingly and face fines or listing suspension.">Desde 2020, la CDMX limita las rentas cortas en Airbnb a 180 noches por año por propiedad. Muchos propietarios llegan al límite sin haber maximizado sus ingresos — o peor, lo superan sin saberlo y enfrentan multas o suspensión del listing.</p>
-          <p data-es="Con gestión profesional, esas 180 noches generan el ingreso máximo posible. Precios dinámicos, ocupación optimizada y canal de reserva directa trabajando en conjunto." data-en="With professional management, those 180 nights generate maximum possible income. Dynamic pricing, optimized occupancy and the direct booking channel working together.">Con gestión profesional, esas 180 noches generan el ingreso máximo posible. Precios dinámicos, ocupación optimizada y canal de reserva directa trabajando en conjunto.</p>
-          <a href="contacto.html" class="btn-primary" style="margin-top:.5rem" data-es="Quiero maximizar mis 180 noches →" data-en="I want to maximize my 180 nights →">Quiero maximizar mis 180 noches →</a>
-        </div>
-        <div class="compliance-cards">
-          <div class="compliance-card bad">
-            <div class="cc-label" data-es="Sin gestión profesional" data-en="Without professional management">Sin gestión profesional</div>
-            <ul>
-              <li data-es="❌ Precio fijo subestimado todo el año" data-en="❌ Underpriced fixed rate all year">❌ Precio fijo subestimado todo el año</li>
-              <li data-es="❌ Noches vacías en temporada alta" data-en="❌ Empty nights during peak season">❌ Noches vacías en temporada alta</li>
-              <li data-es="❌ Sin control del contador de noches" data-en="❌ No night counter tracking">❌ Sin control del contador de noches</li>
-              <li data-es="❌ Riesgo de multa o suspensión de listing" data-en="❌ Risk of fine or listing suspension">❌ Riesgo de multa o suspensión de listing</li>
-              <li data-es="❌ 180 noches desaprovechadas" data-en="❌ 180 nights wasted">❌ 180 noches desaprovechadas</li>
-            </ul>
+      <div class="relative mx-auto grid min-h-[88vh] max-w-7xl items-center gap-8 px-5 pb-24 pt-28 sm:px-6 md:grid-cols-[1fr_360px] lg:grid-cols-[1.05fr_420px] lg:px-8">
+        <div class="max-w-3xl text-white">
+          <p class="mb-5 text-sm font-bold uppercase tracking-[.22em] text-white/68">Para propietarios con departamento en Roma Norte</p>
+          <h1 class="font-serif text-4xl font-bold leading-[1.04] tracking-tight sm:text-5xl lg:text-6xl">
+            Descubre si tu departamento en Roma Norte conviene mas como renta corta, sin perder control del activo.
+          </h1>
+          <p class="mt-6 max-w-2xl text-lg leading-8 text-white/78">
+            Comparamos renta tradicional contra renta corta con noches permitidas, tarifa esperada, comision, mantenimiento y riesgos operativos. Si los datos no favorecen la renta corta, te lo decimos antes de operar.
+          </p>
+          <div class="mt-8 grid max-w-3xl gap-3 sm:grid-cols-4">
+            <div class="border-l border-white/25 pl-4">
+              <p class="text-2xl font-black">Limite anual</p>
+              <p class="mt-1 text-sm text-white/62">CDMX integrado al analisis</p>
+            </div>
+            <div class="border-l border-white/25 pl-4">
+              <p class="text-2xl font-black">Operacion</p>
+              <p class="mt-1 text-sm text-white/62">documentada para propietario</p>
+            </div>
+            <div class="border-l border-white/25 pl-4">
+              <p class="text-2xl font-black">Huespedes</p>
+              <p class="mt-1 text-sm text-white/62">revisados antes de reservar</p>
+            </div>
+            <div class="border-l border-white/25 pl-4">
+              <p class="text-2xl font-black">Reportes</p>
+              <p class="mt-1 text-sm text-white/62">mantenimiento e incidencias</p>
+            </div>
           </div>
-          <div class="compliance-card good">
-            <div class="cc-label" data-es="Con Roma Norte Host" data-en="With Roma Norte Host">Con Roma Norte Host</div>
-            <ul>
-              <li data-es="✓ Precios dinámicos noche a noche" data-en="✓ Dynamic pricing night by night">✓ Precios dinámicos noche a noche</li>
-              <li data-es="✓ Ocupación maximizada en temporada alta" data-en="✓ Maximized occupancy in peak season">✓ Ocupación maximizada en temporada alta</li>
-              <li data-es="✓ Control exacto del contador de noches" data-en="✓ Exact night counter control">✓ Control exacto del contador de noches</li>
-              <li data-es="✓ 100% dentro del reglamento CDMX" data-en="✓ 100% within CDMX regulations">✓ 100% dentro del reglamento CDMX</li>
-              <li data-es="✓ Ingreso máximo por cada noche disponible" data-en="✓ Maximum income per available night">✓ Ingreso máximo por cada noche disponible</li>
-            </ul>
+          <div class="mt-9 flex flex-col gap-3 sm:flex-row">
+            <a href="#calculadora" class="inline-flex items-center justify-center rounded-full bg-brand-coral px-6 py-3.5 text-base font-bold text-white shadow-lg shadow-black/20 transition hover:bg-red-500">Calcular mi punto de equilibrio</a>
+            <a href="/contacto" class="inline-flex items-center justify-center rounded-full border border-white/35 px-6 py-3.5 text-base font-bold text-white transition hover:bg-white hover:text-brand-ink">Solicitar evaluacion patrimonial</a>
           </div>
         </div>
-      </div>
-      <div class="compliance-counter">
-        <div class="counter-item">
-          <div class="counter-num" id="nightsCounter">180</div>
-          <div class="counter-label" data-es="noches máximas permitidas por ley al año" data-en="maximum nights allowed by law per year">noches máximas permitidas por ley al año</div>
-        </div>
-        <div class="counter-divider"></div>
-        <div class="counter-item">
-          <div class="counter-num gold" id="revenueCounter">$204,480</div>
-          <div class="counter-label" data-es="ingreso anual estimado en Roma Norte*" data-en="estimated annual income in Roma Norte*">ingreso anual estimado en Roma Norte*</div>
-        </div>
-        <div class="counter-divider"></div>
-        <div class="counter-item">
-          <div class="counter-num teal">20%</div>
-          <div class="counter-label" data-es="nuestra comisión — sin costos fijos" data-en="our commission — no fixed costs">nuestra comisión — sin costos fijos</div>
-        </div>
-      </div>
-      <p class="counter-note" data-es="*Estimado basado en $1,136 MXN/noche promedio en Roma Norte con ~75% de ocupación sobre 180 noches disponibles." data-en="*Estimate based on $1,136 MXN avg/night in Roma Norte with ~75% occupancy across 180 available nights.">*Estimado basado en $1,136 MXN/noche promedio en Roma Norte con ~75% de ocupación sobre 180 noches disponibles.</p>
-    </div>
-  </section>
 
-
-  <!-- COMPLIANCE / 180 DÍAS -->
-  <section class="compliance-section">
-    <div class="container">
-      <div class="compliance-alert">
-        <div class="alert-icon">⚠️</div>
-        <div class="alert-text">
-          <strong data-es="Ley de Plataformas Digitales · CDMX 2020" data-en="Digital Platforms Law · CDMX 2020">Ley de Plataformas Digitales · CDMX 2020</strong>
-          <span data-es="Tu Airbnb tiene un límite legal de 180 noches por año. Multas de hasta $140,000 MXN por incumplimiento." data-en="Your Airbnb has a legal limit of 180 nights per year. Fines up to $140,000 MXN for non-compliance.">Tu Airbnb tiene un límite legal de 180 noches por año. Multas de hasta $140,000 MXN por incumplimiento.</span>
-        </div>
-      </div>
-      <div class="compliance-grid">
-        <div class="compliance-text">
-          <span class="section-tag" data-es="El Reglamento Que Muchos Ignoran" data-en="The Regulation Many Ignore">El Reglamento Que Muchos Ignoran</span>
-          <h2 data-es="Tu propiedad tiene<br/>un límite de<br/><em>180 noches.</em>" data-en="Your property has<br/>a limit of<br/><em>180 nights.</em>">Tu propiedad tiene<br/>un límite de<br/><em>180 noches.</em></h2>
-          <p data-es="Desde 2020, la Ley de Plataformas Digitales de CDMX limita las rentas cortas a <strong>180 noches por año por propiedad</strong>. La mayoría de los propietarios llega al límite sin haber maximizado sus ingresos — o peor, lo supera sin saberlo." data-en="Since 2020, CDMX's Digital Platforms Law limits short-term rentals to <strong>180 nights per year per property</strong>. Most owners hit the limit without maximizing income — or worse, exceed it unknowingly.">Desde 2020, la Ley de Plataformas Digitales de CDMX limita las rentas cortas a <strong>180 noches por año por propiedad</strong>. La mayoría de los propietarios llega al límite sin haber maximizado sus ingresos — o peor, lo supera sin saberlo.</p>
-          <p data-es="Con gestión profesional, esas 180 noches generan el ingreso máximo posible — y el contador se monitorea cada mes para que nunca tengas sorpresas." data-en="With professional management, those 180 nights generate maximum possible income — and the counter is monitored monthly so you never have surprises.">Con gestión profesional, esas 180 noches generan el ingreso máximo posible — y el contador se monitorea cada mes para que nunca tengas sorpresas.</p>
-          <a href="contacto.html" class="btn-primary" style="margin-top:.5rem;display:inline-block" data-es="Quiero maximizar mis 180 noches →" data-en="I want to maximize my 180 nights →">Quiero maximizar mis 180 noches →</a>
-        </div>
-        <div class="compliance-cards">
-          <div class="compliance-card bad">
-            <div class="cc-label" data-es="Sin gestión profesional" data-en="Without professional management">Sin gestión profesional</div>
-            <ul>
-              <li data-es="❌ Precio fijo subestimado todo el año" data-en="❌ Underpriced fixed rate all year">❌ Precio fijo subestimado todo el año</li>
-              <li data-es="❌ Noches vacías en temporada alta" data-en="❌ Empty nights during peak season">❌ Noches vacías en temporada alta</li>
-              <li data-es="❌ Sin monitoreo del contador de noches" data-en="❌ No night counter monitoring">❌ Sin monitoreo del contador de noches</li>
-              <li data-es="❌ Riesgo de multa o suspensión" data-en="❌ Risk of fine or listing suspension">❌ Riesgo de multa o suspensión</li>
-              <li data-es="❌ 180 noches desperdiciadas" data-en="❌ 180 nights wasted">❌ 180 noches desperdiciadas</li>
-            </ul>
+        <div class="rounded-2xl bg-white p-6 text-brand-ink shadow-premium">
+          <p class="text-sm font-bold uppercase tracking-[.18em] text-brand-teal">Diagnostico inicial</p>
+          <h2 class="mt-3 font-serif text-2xl font-bold leading-tight">No operamos sin antes medir el caso.</h2>
+          <div class="mt-5 space-y-3">
+            <div class="border-t border-black/10 pt-4">
+              <p class="font-bold">Renta actual vs ingreso neto</p>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Comparamos renta tradicional contra renta corta despues de comision, noches permitidas y reserva de mantenimiento.</p>
+            </div>
+            <div class="border-t border-black/10 pt-4">
+              <p class="font-bold">Riesgo operativo</p>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Revisamos vecinos, reglas del edificio, tipo de huesped, desgaste esperado y puntos de control.</p>
+            </div>
+            <div class="border-t border-black/10 pt-4">
+              <p class="font-bold">Dictamen honesto</p>
+              <p class="mt-1 text-sm leading-6 text-slate-600">Si no conviene frente a una renta tradicional, la recomendacion es conservar o ajustar el escenario.</p>
+            </div>
           </div>
-          <div class="compliance-card good">
-            <div class="cc-label" data-es="Con Roma Norte Host" data-en="With Roma Norte Host">Con Roma Norte Host</div>
-            <ul>
-              <li data-es="✓ Precios dinámicos noche a noche" data-en="✓ Dynamic pricing night by night">✓ Precios dinámicos noche a noche</li>
-              <li data-es="✓ Ocupación maximizada en temporada alta" data-en="✓ Maximized occupancy in peak season">✓ Ocupación maximizada en temporada alta</li>
-              <li data-es="✓ Reporte mensual del contador de noches" data-en="✓ Monthly night counter report">✓ Reporte mensual del contador de noches</li>
-              <li data-es="✓ 100% dentro del reglamento CDMX" data-en="✓ 100% within CDMX regulations">✓ 100% within CDMX regulations</li>
-              <li data-es="✓ Ingreso máximo por cada noche disponible" data-en="✓ Maximum income per available night">✓ Ingreso máximo por cada noche disponible</li>
-            </ul>
+          <a href="/contacto" class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-brand-ink px-5 py-3 font-bold text-white transition hover:bg-brand-coral">Agendar evaluacion patrimonial</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-20">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:px-8">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-brand-teal">No es solo ocupacion</p>
+          <h2 class="mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-brand-ink sm:text-5xl">Un inmueble caro necesita administracion con criterio.</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">El objetivo no es llenar noches a cualquier precio. Es producir ingreso neto sin perder control sobre el estado del departamento, el perfil de huesped y la documentacion de cada decision.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <article class="rounded-2xl border border-black/10 bg-white p-6">
+            <p class="text-sm font-bold uppercase tracking-[.16em] text-brand-teal">Protege tu inmueble</p>
+            <h3 class="mt-3 text-xl font-black">Seleccion de huespedes</h3>
+            <p class="mt-3 text-slate-600">Revisamos motivo de estancia, reglas, compatibilidad y riesgos antes de reservas sensibles.</p>
+          </article>
+          <article class="rounded-2xl border border-black/10 bg-white p-6">
+            <p class="text-sm font-bold uppercase tracking-[.16em] text-brand-teal">Ingreso neto</p>
+            <h3 class="mt-3 text-xl font-black">Decisiones con datos</h3>
+            <p class="mt-3 text-slate-600">Tarifas, ocupacion y calendario se ajustan por demanda, temporadas y limite anual.</p>
+          </article>
+          <article class="rounded-2xl border border-black/10 bg-white p-6">
+            <p class="text-sm font-bold uppercase tracking-[.16em] text-brand-teal">Operacion documentada</p>
+            <h3 class="mt-3 text-xl font-black">Reportes mensuales</h3>
+            <p class="mt-3 text-slate-600">Ingreso bruto, comision, neto propietario, incidencias, mantenimiento y siguientes decisiones.</p>
+          </article>
+          <article class="rounded-2xl border border-black/10 bg-white p-6">
+            <p class="text-sm font-bold uppercase tracking-[.16em] text-brand-teal">Cumplimiento CDMX</p>
+            <h3 class="mt-3 text-xl font-black">Contrato y reglas</h3>
+            <p class="mt-3 text-slate-600">Alcance operativo, responsabilidades, calendario y seguimiento regulatorio desde el inicio.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="calculadora" class="bg-white py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="mb-10 grid gap-8 lg:grid-cols-[.95fr_1.05fr] lg:items-end">
+          <div>
+            <p class="text-sm font-bold uppercase tracking-[.2em] text-brand-teal">Calculadora patrimonial</p>
+            <h2 class="mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-brand-ink sm:text-5xl">En que escenario te conviene la renta corta?</h2>
           </div>
+          <p class="text-lg leading-8 text-slate-600">Ajusta los supuestos y compara ingreso anual, rendimiento sobre valor de compra y punto de equilibrio. La lectura util no es solo cuanto produce, sino si compensa comision, mantenimiento, limite anual y desgaste operativo.</p>
         </div>
-      </div>
-      <div class="compliance-counter">
-        <div class="counter-item">
-          <div class="counter-num">180</div>
-          <div class="counter-label" data-es="noches máximas al año por ley" data-en="max nights per year by law">noches máximas al año por ley</div>
-        </div>
-        <div class="counter-divider"></div>
-        <div class="counter-item">
-          <div class="counter-num gold">$204k MXN</div>
-          <div class="counter-label" data-es="ingreso anual estimado en Roma Norte*" data-en="estimated annual income in Roma Norte*">ingreso anual estimado en Roma Norte*</div>
-        </div>
-        <div class="counter-divider"></div>
-        <div class="counter-item">
-          <div class="counter-num teal">20%</div>
-          <div class="counter-label" data-es="comisión — sin costos fijos" data-en="commission — no fixed costs">comisión — sin costos fijos</div>
-        </div>
-      </div>
-      <p class="counter-note" data-es="*Estimado con $1,136 MXN/noche promedio en Roma Norte y ~75% de ocupación sobre 180 noches disponibles al año. Fuente: datos Airbnb CDMX 2024." data-en="*Estimate based on $1,136 MXN avg/night in Roma Norte with ~75% occupancy across 180 available nights/year. Source: Airbnb CDMX 2024 data.">*Estimado con $1,136 MXN/noche promedio en Roma Norte y ~75% de ocupación sobre 180 noches disponibles al año. Fuente: datos Airbnb CDMX 2024.</p>
-    </div>
-  </section>
 
-  <section class="value-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-es="Por qué Roma Norte Host" data-en="Why Roma Norte Host">Por qué Roma Norte Host</span>
-        <h2><span data-es="Tu propiedad se administra sola.<br/><em>Nosotros lo hacemos posible.</em>" data-en="Your property runs itself.<br/><em>We make that happen.</em>">Tu propiedad se administra sola.<br/><em>Nosotros lo hacemos posible.</em></span></h2>
-        <p data-es="La mayoría de los propietarios en Roma Norte dejan dinero sobre la mesa con anuncios sin optimizar, respuestas lentas y limpieza inconsistente. Nosotros lo resolvemos todo." data-en="Most property owners in Roma Norte leave money on the table with unoptimized listings, slow guest replies, and inconsistent cleaning. We fix all of that.">La mayoría de los propietarios en Roma Norte dejan dinero sobre la mesa con anuncios sin optimizar, respuestas lentas y limpieza inconsistente. Nosotros lo resolvemos todo.</p>
-      </div>
-      <div class="value-grid">
-        <div class="value-card" style="--i:0"><div class="value-icon">📸</div><h3 data-es="Fotografía Profesional" data-en="Professional Photography">Fotografía Profesional</h3><p data-es="Los anuncios con fotos profesionales generan 40% más reservaciones. Coordinamos la sesión antes de tu primer huésped." data-en="Listings with professional photos earn 40% more per booking. We arrange the shoot before your first guest.">Los anuncios con fotos profesionales generan 40% más reservaciones. Coordinamos la sesión antes de tu primer huésped.</p></div>
-        <div class="value-card" style="--i:1"><div class="value-icon">💸</div><h3 data-es="Precios Dinámicos" data-en="Dynamic Pricing">Precios Dinámicos</h3><p data-es="Ajustamos tu tarifa nocturna según demanda, eventos locales y competencia. Más ingresos sin más trabajo." data-en="We adjust your nightly rate based on demand, local events, and competitor data. More revenue without more work.">Ajustamos tu tarifa nocturna según demanda, eventos locales y competencia. Más ingresos sin más trabajo.</p></div>
-        <div class="value-card" style="--i:2"><div class="value-icon">💬</div><h3 data-es="Comunicación con Huéspedes" data-en="Guest Communication">Comunicación con Huéspedes</h3><p data-es="Todos los mensajes respondidos en menos de 1 hora, 7 días a la semana. En español e inglés." data-en="All messages answered within 1 hour, 7 days a week. In Spanish and English.">Todos los mensajes respondidos en menos de 1 hora, 7 días a la semana. En español e inglés.</p></div>
-        <div class="value-card" style="--i:3"><div class="value-icon">🧹</div><h3 data-es="Limpieza y Rotación" data-en="Cleaning & Turnover">Limpieza y Rotación</h3><p data-es="Limpieza profesional entre cada estancia. Ropa de cama fresca, presentación de calidad hotelera." data-en="Professional cleaning between every stay. Fresh linens, hotel-quality presentation.">Limpieza profesional entre cada estancia. Ropa de cama fresca, presentación de calidad hotelera.</p></div>
-        <div class="value-card" style="--i:4"><div class="value-icon">🔧</div><h3 data-es="Mantenimiento" data-en="Maintenance">Mantenimiento</h3><p data-es="Reparaciones menores coordinadas con nuestra red de proveedores. Te enteras en el reporte mensual — no a las 11pm." data-en="Minor repairs coordinated through our vendor network. You hear about it on the monthly report — not at 11pm.">Reparaciones menores coordinadas con nuestra red de proveedores. Te enteras en el reporte mensual — no a las 11pm.</p></div>
-        <div class="value-card" style="--i:5"><div class="value-icon">📊</div><h3 data-es="Reportes Mensuales" data-en="Monthly Reports">Reportes Mensuales</h3><p data-es="PDF claro cada mes: noches reservadas, ingresos, gastos y tasa de ocupación. Transparencia total." data-en="Clear PDF every month: nights booked, revenue, expenses, and occupancy rate. Full transparency.">PDF claro cada mes: noches reservadas, ingresos, gastos y tasa de ocupación. Transparencia total.</p></div>
-      </div>
-    </div>
-  </section>
+        <div class="grid gap-6 lg:grid-cols-[410px_1fr]">
+          <form class="rounded-2xl border border-black/10 bg-brand-ivory p-6" id="yieldCalculator">
+            <div class="grid gap-5">
+              <label class="block">
+                <span class="text-sm font-bold text-slate-700">Valor del departamento</span>
+                <div class="mt-2 flex rounded-xl border border-black/10 bg-white">
+                  <span class="flex items-center px-3 text-slate-500">$</span>
+                  <input id="propertyValue" type="text" inputmode="numeric" pattern="[0-9]*" value="5000000" class="w-full rounded-r-xl border-0 bg-transparent px-3 py-3 font-semibold text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal"/>
+                </div>
+              </label>
 
-  <section class="team-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-es="El Equipo" data-en="The Team">El Equipo</span>
-        <h2><span data-es="Hosts verificados.<br/><em>Personas reales.</em>" data-en="Verified hosts.<br/><em>Real people.</em>">Hosts verificados.<br/><em>Personas reales.</em></span></h2>
-        <p data-es="No somos una empresa impersonal. Somos un equipo de tres hosts activos en Airbnb con 4+ años de experiencia en CDMX." data-en="We're not an impersonal company. We're a team of three active Airbnb hosts with 4+ years of experience in CDMX.">No somos una empresa impersonal. Somos un equipo de tres hosts activos en Airbnb con 4+ años de experiencia en CDMX.</p>
-      </div>
-      <div class="team-grid">
-        <div class="team-card">
-          <img onerror="this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex')" src="https://a0.muscache.com/im/pictures/user/User/original/a549dfdc-f52e-4f0f-bb8c-3f43aa18c631.jpeg?aki_policy=profile_large" alt="Agustin Cal" class="team-photo"/>
-          <span class="team-role" data-es="Host Principal" data-en="Primary Host">Host Principal</span>
-          <h3>Agustin Cal</h3>
-          <p data-es="Fundador y host principal. 4 años hospedando en CDMX, 283 reseñas, calificación 4.66★. Estrategia de precios y optimización de listings." data-en="Founder and primary host. 4 years hosting in CDMX, 283 reviews, 4.66★ rating. Pricing strategy and listing optimization.">Fundador y host principal. 4 años hospedando en CDMX, 283 reseñas, calificación 4.66★. Estrategia de precios y optimización de listings.</p>
-          <div class="team-airbnb">⭐ Superhost · Airbnb</div>
-        </div>
-        <div class="team-card">
-          <img onerror="this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex')" src="https://a0.muscache.com/im/pictures/user/User/original/792ff934-0b72-4093-b118-732ab7dd8037.jpeg?aki_policy=profile_large" alt="Anali Chavez" class="team-photo"/>
-          <span class="team-role" data-es="Co-host · Experiencia del Huésped" data-en="Co-host · Guest Experience">Co-host · Experiencia del Huésped</span>
-          <h3>Anali Chavez</h3>
-          <p data-es="Responsable de la comunicación con huéspedes. Garantiza que cada estancia sea una experiencia de 5 estrellas desde el primer mensaje." data-en="Responsible for guest communication. Ensures every stay is a 5-star experience from the first message.">Responsable de la comunicación con huéspedes. Garantiza que cada estancia sea una experiencia de 5 estrellas desde el primer mensaje.</p>
-          <div class="team-airbnb">⭐ Co-host verificado · Airbnb</div>
-        </div>
-        <div class="team-card">
-          <img onerror="this.style.display='none';this.nextElementSibling&&(this.nextElementSibling.style.display='flex')" src="https://a0.muscache.com/im/pictures/user/User/original/a27769b5-951f-4765-8b71-f4dd522d4524.jpeg?aki_policy=profile_large" alt="Antonio Chavez" class="team-photo"/>
-          <span class="team-role" data-es="Co-host · Operaciones" data-en="Co-host · Operations">Co-host · Operaciones</span>
-          <h3>Antonio (Ale) Chavez</h3>
-          <p data-es="Encargado del calendario y la logística operativa. Asegura que cada rotación entre huéspedes sea impecable y puntual." data-en="Responsible for calendar and operational logistics. Ensures every guest turnover is flawless and on time.">Encargado del calendario y la logística operativa. Asegura que cada rotación entre huéspedes sea impecable y puntual.</p>
-          <div class="team-airbnb">⭐ Co-host verificado · Airbnb</div>
-        </div>
-      </div>
-      <div style="text-align:center;margin-top:2.5rem">
-        <a href="nosotros.html" class="btn-ghost" data-es="Conoce más sobre el equipo →" data-en="Meet the full team →">Conoce más sobre el equipo →</a>
-      </div>
-    </div>
-  </section>
+              <label class="block">
+                <span class="text-sm font-bold text-slate-700">Renta tradicional mensual</span>
+                <div class="mt-2 flex rounded-xl border border-black/10 bg-white">
+                  <span class="flex items-center px-3 text-slate-500">$</span>
+                  <input id="traditionalRent" type="text" inputmode="numeric" pattern="[0-9]*" value="28000" class="w-full rounded-r-xl border-0 bg-transparent px-3 py-3 font-semibold text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal"/>
+                </div>
+              </label>
 
-  <section class="proof-section">
-    <div class="container">
-      <div class="proof-inner">
-        <div class="proof-text">
-          <div class="section-header" style="text-align:left;margin:0 0 2rem">
-            <span class="section-tag light" data-es="Nuestros Resultados" data-en="Our Track Record">Nuestros Resultados</span>
-            <h2 style="color:#fff"><span data-es="No prometemos resultados.<br/><em>StayWork CDMX es la prueba.</em>" data-en="We don't just promise results.<br/><em>StayWork CDMX is proof.</em>">No prometemos resultados.<br/><em>StayWork CDMX es la prueba.</em></span></h2>
-            <p style="color:rgba(255,255,255,.7)" data-es="Nuestra marca StayWork CDMX es lo que ocurre cuando gestionamos bien las propiedades. Construida desde las mismas propiedades que operamos en Roma Norte." data-en="Our guest brand StayWork CDMX is what happens when we manage properties well.">Nuestra marca StayWork CDMX es lo que ocurre cuando gestionamos bien las propiedades. Construida desde las mismas propiedades que operamos en Roma Norte.</p>
-          </div>
-          <ul class="proof-list">
-            <li><span class="check">✓</span> <span data-es="4.67★ de promedio en todas las propiedades" data-en="4.67★ average rating across all properties">4.67★ de promedio en todas las propiedades</span></li>
-            <li><span class="check">✓</span> <span data-es="283+ reseñas verificadas de huéspedes" data-en="283+ verified guest reviews">283+ reseñas verificadas de huéspedes</span></li>
-            <li><span class="check">✓</span> <span data-es="4+ años de operación continua en CDMX" data-en="4+ years of continuous operation in CDMX">4+ años de operación continua en CDMX</span></li>
-            <li><span class="check">✓</span> <span data-es="Canal de reserva directa para reducir comisiones" data-en="Direct booking channel to reduce Airbnb fees">Canal de reserva directa para reducir comisiones</span></li>
-          </ul>
-          <a href="resultados.html" class="btn-primary" data-es="Ver resultados completos →" data-en="See Full Results →">Ver resultados completos →</a>
-        </div>
-        <div class="proof-card-col">
-          <div class="review-card"><div class="stars">★★★★★</div><p>"Perfecto para trabajar remoto. El escritorio con el monitor grande fue exactamente lo que necesitaba. Internet rápido, espacio limpio, excelente ubicación."</p><div class="reviewer"><div class="reviewer-avatar">MK</div><div><strong>Marcus K.</strong><span data-es="Nómada digital · 3 semanas · Roma Norte" data-en="Remote worker · 3-week stay · Roma Norte">Nómada digital · 3 semanas · Roma Norte</span></div></div></div>
-          <div class="review-card"><div class="stars">★★★★★</div><p>"Nos quedamos en Narvarte durante nuestra rotación médica. Muy conveniente, tranquilo, limpio. Agustin y Anali siempre respondieron muy rápido."</p><div class="reviewer"><div class="reviewer-avatar">SL</div><div><strong>Sofia L.</strong><span data-es="Médico · 1 mes · Narvarte" data-en="Medical professional · 1-month stay">Médico · 1 mes · Narvarte</span></div></div></div>
-          <div class="managed-badge"><span data-es="Marca para huéspedes:" data-en="Guest brand:">Marca para huéspedes:</span><a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX →</a></div>
-        </div>
-      </div>
-    </div>
-  </section>
+              <label class="block">
+                <span class="text-sm font-bold text-slate-700">Tarifa promedio por noche</span>
+                <div class="mt-2 flex rounded-xl border border-black/10 bg-white">
+                  <span class="flex items-center px-3 text-slate-500">$</span>
+                  <input id="nightlyRate" type="text" inputmode="numeric" pattern="[0-9]*" value="1800" class="w-full rounded-r-xl border-0 bg-transparent px-3 py-3 font-semibold text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal"/>
+                </div>
+              </label>
 
-  <section class="process-section">
-    <div class="container">
-      <div class="section-header">
-        <span class="section-tag" data-es="Cómo Funciona" data-en="How It Works">Cómo Funciona</span>
-        <h2><span data-es="De tu propiedad a<br/><em>reseñas de 5 estrellas</em> en 3 pasos." data-en="From your property to<br/><em>5-star reviews</em> in 3 steps.">De tu propiedad a<br/><em>reseñas de 5 estrellas</em> en 3 pasos.</span></h2>
-      </div>
-      <div class="steps">
-        <div class="step"><div class="step-num">01</div><h3 data-es="Evaluación gratuita" data-en="Free Property Evaluation">Evaluación gratuita</h3><p data-es="Visitamos tu propiedad, evaluamos su potencial y te damos una estimación de ingreso mensual — gratis, sin compromiso." data-en="We visit your property, assess its rental potential, and give you a monthly income estimate — free, no commitment.">Visitamos tu propiedad, evaluamos su potencial y te damos una estimación de ingreso mensual — gratis, sin compromiso.</p></div>
-        <div class="step-arrow">→</div>
-        <div class="step"><div class="step-num">02</div><h3 data-es="Setup y publicación" data-en="Full Setup & Launch">Setup y publicación</h3><p data-es="Fotografía profesional, anuncio, cerradura inteligente y calibración de precios. Tu propiedad generando ingresos en 2 semanas." data-en="Professional photography, listing, smart lock, and pricing. Your property earning within 2 weeks.">Fotografía profesional, anuncio, cerradura inteligente y calibración de precios. Tu propiedad generando ingresos en 2 semanas.</p></div>
-        <div class="step-arrow">→</div>
-        <div class="step"><div class="step-num">03</div><h3 data-es="Recibe tu dinero" data-en="Sit Back & Collect">Recibe tu dinero</h3><p data-es="Nos encargamos de cada huésped, cada limpieza, cada inconveniente. Tú recibes transferencia mensual + reporte." data-en="We handle every guest, every cleaning, every issue. You receive a monthly bank transfer and clear income report.">Nos encargamos de cada huésped, cada limpieza, cada inconveniente. Tú recibes transferencia mensual + reporte.</p></div>
-      </div>
-    </div>
-  </section>
+              <label class="block">
+                <span class="text-sm font-bold text-slate-700">Noches ocupadas al ano</span>
+                <input id="bookedNights" type="text" inputmode="numeric" pattern="[0-9]*" value="150" class="mt-2 w-full rounded-xl border border-black/10 bg-white px-3 py-3 font-semibold text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal"/>
+              </label>
 
-  <section class="pricing-section">
-    <div class="container">
-      <div class="pricing-inner">
-        <div class="pricing-text">
-          <span class="section-tag light" data-es="Precios Simples" data-en="Simple Pricing">Precios Simples</span>
-          <h2 style="font-family:var(--font-display);font-size:2.4rem;color:#fff;line-height:1.2;margin-bottom:1rem"><span data-es="Ganamos solo cuando<br/><em style='color:var(--gold-lt);font-style:italic'>tú ganas.</em>" data-en="We only win<br/><em style='color:var(--gold-lt);font-style:italic'>when you win.</em>">Ganamos solo cuando<br/><em style="color:var(--gold-lt);font-style:italic">tú ganas.</em></span></h2>
-          <p style="color:rgba(255,255,255,.7);margin-bottom:2rem" data-es="Sin mensualidades, sin cargos de alta. Un porcentaje de tus ingresos — si tu propiedad gana más, nosotros ganamos más." data-en="No monthly retainers, no setup fees. A percentage of your revenue — if your property earns more, we earn more.">Sin mensualidades, sin cargos de alta. Un porcentaje de tus ingresos — si tu propiedad gana más, nosotros ganamos más.</p>
-          <a href="servicios.html" class="btn-outline-light" data-es="Ver precios completos →" data-en="View Full Pricing →">Ver precios completos →</a>
-        </div>
-        <div class="pricing-cards">
-          <div class="pricing-card">
-            <div class="pricing-label" data-es="Estándar" data-en="Standard">Estándar</div>
-            <div class="pricing-pct">20<span>%</span></div>
-            <div class="pricing-desc" data-es="del ingreso mensual" data-en="of monthly revenue">del ingreso mensual</div>
-            <ul>
-              <li data-es="Setup del anuncio" data-en="Listing setup">Setup del anuncio</li>
-              <li data-es="Comunicación con huéspedes" data-en="Guest communication">Comunicación con huéspedes</li>
-              <li data-es="Coordinación de limpieza" data-en="Cleaning coordination">Coordinación de limpieza</li>
-              <li data-es="Reportes mensuales" data-en="Monthly reports">Reportes mensuales</li>
-            </ul>
-          </div>
-          <div class="pricing-card featured">
-            <div class="pricing-label">Premium</div>
-            <div class="pricing-pct">25<span>%</span></div>
-            <div class="pricing-desc" data-es="del ingreso mensual" data-en="of monthly revenue">del ingreso mensual</div>
-            <ul>
-              <li data-es="Todo lo del plan Estándar" data-en="Everything in Standard">Todo lo del plan Estándar</li>
-              <li data-es="Precios dinámicos" data-en="Dynamic pricing">Precios dinámicos</li>
-              <li data-es="Canal de reserva directa" data-en="Direct booking channel">Canal de reserva directa</li>
-              <li data-es="Llamada estratégica mensual" data-en="Monthly strategy call">Llamada estratégica mensual</li>
-            </ul>
+              <label class="block">
+                <span class="text-sm font-bold text-slate-700">Comision de gestion</span>
+                <select id="managementFee" class="mt-2 w-full rounded-xl border border-black/10 bg-white px-3 py-3 font-semibold text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal">
+                  <option value="0.20">20% gestion base</option>
+                  <option value="0.25">25% gestion premium</option>
+                </select>
+              </label>
+
+              <label class="block">
+                <span class="text-sm font-bold text-slate-700">Reserva anual mantenimiento</span>
+                <div class="mt-2 flex rounded-xl border border-black/10 bg-white">
+                  <span class="flex items-center px-3 text-slate-500">$</span>
+                  <input id="maintenanceReserve" type="text" inputmode="numeric" pattern="[0-9]*" value="18000" class="w-full rounded-r-xl border-0 bg-transparent px-3 py-3 font-semibold text-brand-ink focus:outline-none focus:ring-2 focus:ring-brand-teal"/>
+                </div>
+              </label>
+            </div>
+            <p class="mt-5 text-sm leading-6 text-slate-500">No incluye ISR, predial, credito hipotecario ni plusvalia. Supone que la limpieza se cobra al huesped o se compensa dentro de la tarifa.</p>
+          </form>
+
+          <div class="rounded-2xl border border-black/10 bg-white p-6 shadow-premium">
+            <div class="grid gap-4 md:grid-cols-2">
+              <div class="rounded-2xl bg-brand-ink p-6 text-white">
+                <p class="text-sm font-bold uppercase tracking-[.16em] text-white/55">Renta tradicional</p>
+                <p class="mt-6 text-sm text-white/60">Ingreso anual estimado</p>
+                <p class="mt-2 text-4xl font-black" id="traditionalAnnual">$336,000</p>
+                <p class="mt-6 text-sm text-white/60">Rendimiento bruto anual</p>
+                <p class="mt-2 text-3xl font-black" id="traditionalYield">6.72%</p>
+              </div>
+
+              <div class="rounded-2xl bg-brand-teal p-6 text-white">
+                <p class="text-sm font-bold uppercase tracking-[.16em] text-white/70">Con Roma Norte Host</p>
+                <p class="mt-6 text-sm text-white/75">Ingreso neto anual estimado</p>
+                <p class="mt-2 text-4xl font-black" id="shortTermNet">$198,000</p>
+                <p class="mt-6 text-sm text-white/75">Rendimiento neto anual</p>
+                <p class="mt-2 text-3xl font-black" id="shortTermYield">3.96%</p>
+              </div>
+            </div>
+
+            <div class="mt-5 rounded-2xl border border-black/10 bg-brand-ivory p-6">
+              <div class="flex flex-col gap-5 sm:flex-row sm:items-end sm:justify-between">
+                <div>
+                  <p class="text-sm font-bold uppercase tracking-[.16em] text-slate-500">Diferencia estimada</p>
+                  <p class="mt-2 text-4xl font-black text-brand-ink" id="annualDelta">-$138,000</p>
+                  <p class="mt-2 max-w-2xl text-slate-600" id="deltaCopy">Con estos supuestos, la renta tradicional gana. La oportunidad esta en validar tarifa, ocupacion o costos antes de decidir.</p>
+                </div>
+                <a href="/contacto" class="inline-flex shrink-0 items-center justify-center rounded-full bg-brand-coral px-5 py-3 font-bold text-white transition hover:bg-red-500">Solicitar evaluacion patrimonial</a>
+              </div>
+            </div>
+
+            <div class="mt-5 grid gap-3 sm:grid-cols-3">
+              <div class="rounded-xl border border-black/10 p-4">
+                <p class="text-sm text-slate-500">Ingreso bruto renta corta</p>
+                <p class="mt-1 text-xl font-black text-brand-ink" id="shortTermGross">$270,000</p>
+              </div>
+              <div class="rounded-xl border border-black/10 p-4">
+                <p class="text-sm text-slate-500">Comision gestion</p>
+                <p class="mt-1 text-xl font-black text-brand-ink" id="feeAmount">$54,000</p>
+              </div>
+              <div class="rounded-xl border border-black/10 p-4">
+                <p class="text-sm text-slate-500">Tarifa equilibrio</p>
+                <p class="mt-1 text-xl font-black text-brand-ink" id="breakEvenRate">$2,360</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="cta-section">
-    <div class="container">
-      <div class="cta-inner">
-        <h2 data-es="¿Listo para que tu propiedad en Roma Norte trabaje por ti?" data-en="Ready to put your Roma Norte property to work?">¿Listo para que tu propiedad en Roma Norte trabaje por ti?</h2>
-        <p data-es="Evaluación gratuita. Sin compromiso. Te decimos exactamente cuánto puede generar tu propiedad." data-en="Free evaluation. No commitment. We'll tell you exactly what your property can earn.">Evaluación gratuita. Sin compromiso. Te decimos exactamente cuánto puede generar tu propiedad.</p>
-        <div class="cta-actions">
-          <a href="contacto.html" class="btn-primary-dark" data-es="Cotizar mi propiedad →" data-en="Get a Free Estimate →">Cotizar mi propiedad →</a>
-          <a href="mailto:hello@romanortehost.mx" class="btn-ghost-dark">✉ hello@romanortehost.mx</a>
+    <section class="bg-brand-ink py-20 text-white">
+      <div class="mx-auto grid max-w-7xl gap-12 px-5 sm:px-6 lg:grid-cols-[.9fr_1.1fr] lg:items-center lg:px-8">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-brand-teal">Confianza legal y operativa</p>
+          <h2 class="mt-4 font-serif text-4xl font-bold leading-tight tracking-tight sm:text-5xl">Antes de maximizar ingresos, protegemos el inmueble.</h2>
+          <p class="mt-5 text-lg leading-8 text-white/68">Un departamento de alto valor necesita reglas, documentacion, mantenimiento y visibilidad para que el ingreso no venga a costa del deterioro del activo.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-white/[.04] p-6"><h3 class="font-black">Contrato de gestion</h3><p class="mt-2 text-sm leading-6 text-white/62">Condiciones, comision, responsabilidades y alcance operativo definidos desde el inicio.</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.04] p-6"><h3 class="font-black">Seleccion de huespedes</h3><p class="mt-2 text-sm leading-6 text-white/62">Perfil, motivo de estancia, reglas y compatibilidad antes de aceptar reservas delicadas.</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.04] p-6"><h3 class="font-black">Mantenimiento documentado</h3><p class="mt-2 text-sm leading-6 text-white/62">Incidencias, reparaciones y revisiones con seguimiento visible para el propietario.</p></div>
+          <div class="rounded-2xl border border-white/10 bg-white/[.04] p-6"><h3 class="font-black">Cumplimiento CDMX</h3><p class="mt-2 text-sm leading-6 text-white/62">Calendario, limite anual y operacion alineada al marco local vigente.</p></div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-top">
-        <div class="footer-brand">
-          <div class="footer-logo"><span class="logo-rn">Roma Norte</span><span class="logo-host">Host</span></div>
-          <p data-es="Gestión premium de propiedades en Colonia Roma Norte, Ciudad de México." data-en="Premier property management in Colonia Roma Norte, Mexico City.">Gestión premium de propiedades en Colonia Roma Norte, Ciudad de México.</p>
-          <a href="mailto:hello@romanortehost.mx">hello@romanortehost.mx</a>
+    <section class="bg-brand-ivory py-20">
+      <div class="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-brand-teal">Objeciones patrimoniales</p>
+          <h2 class="mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-brand-ink sm:text-5xl">Las dudas correctas se resuelven antes de publicar.</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">Un diagnostico serio no parte de la promesa de ocupar noches, sino de proteger tu inmueble, anticipar fricciones y decidir con datos.</p>
         </div>
-        <div class="footer-links">
-          <h4 data-es="Empresa" data-en="Company">Empresa</h4>
-          <ul>
-            <li><a href="servicios.html" data-es="Servicios" data-en="Services">Servicios</a></li>
-            <li><a href="resultados.html" data-es="Resultados" data-en="Results">Resultados</a></li>
-            <li><a href="nosotros.html" data-es="Nosotros" data-en="About Us">Nosotros</a></li>
-            <li><a href="guia.html" data-es="Guía Roma Norte" data-en="Roma Norte Guide">Guía Roma Norte</a></li>
-            <li><a href="contacto.html" data-es="Contacto" data-en="Contact">Contacto</a></li>
-          </ul>
-        </div>
-        <div class="footer-links">
-          <h4 data-es="Nuestra Marca para Huéspedes" data-en="Our Guest Brand">Nuestra Marca para Huéspedes</h4>
-          <ul><li><a href="https://stayworkcdmx.com" target="_blank" rel="noopener">StayWork CDMX</a></li></ul>
+        <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-5">
+          <article class="rounded-2xl border border-black/10 bg-white p-5">
+            <h3 class="font-black">Deterioro</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Inventario, reglas de uso, deposito cuando aplique y seguimiento de incidencias.</p>
+          </article>
+          <article class="rounded-2xl border border-black/10 bg-white p-5">
+            <h3 class="font-black">Vecinos</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Reglas del edificio, comunicacion preventiva y reservas compatibles con la vida del inmueble.</p>
+          </article>
+          <article class="rounded-2xl border border-black/10 bg-white p-5">
+            <h3 class="font-black">Huespedes</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Revision de perfil, motivo de estancia y condiciones claras antes de aceptar reservas sensibles.</p>
+          </article>
+          <article class="rounded-2xl border border-black/10 bg-white p-5">
+            <h3 class="font-black">Reportes</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Ingreso bruto, comision, neto propietario, mantenimiento e incidencias visibles cada mes.</p>
+          </article>
+          <article class="rounded-2xl border border-black/10 bg-white p-5">
+            <h3 class="font-black">Si no conviene</h3>
+            <p class="mt-2 text-sm leading-6 text-slate-600">Se documenta el motivo y se recomienda renta tradicional o validar supuestos antes de operar.</p>
+          </article>
         </div>
       </div>
-      <div class="footer-bottom">
-        <span>©2026 Roma Norte Host · Colonia Roma Norte, CDMX</span>
-        <span><span data-es="Marca para huéspedes:" data-en="Guest brand:">Marca para huéspedes:</span> <a href="https://stayworkcdmx.com" target="_blank">StayWork CDMX</a></span>
+    </section>
+
+    <section class="bg-white py-20">
+      <div class="mx-auto grid max-w-7xl items-center gap-12 px-5 sm:px-6 lg:grid-cols-2 lg:px-8">
+        <div>
+          <p class="text-sm font-bold uppercase tracking-[.2em] text-brand-teal">Roma Norte</p>
+          <h2 class="mt-4 font-serif text-4xl font-bold leading-tight tracking-tight text-brand-ink sm:text-5xl">Una zona premium exige una operacion premium.</h2>
+          <p class="mt-5 text-lg leading-8 text-slate-600">La demanda existe, pero tambien la competencia. La diferencia esta en presentacion, pricing, experiencia de huesped y disciplina operativa.</p>
+          <div class="mt-8 grid gap-4 sm:grid-cols-2">
+            <div class="rounded-2xl border border-black/10 p-5"><strong>Proteccion del activo</strong><p class="mt-2 text-sm text-slate-600">Reglas claras, revisiones, mantenimiento coordinado y seleccion de huesped.</p></div>
+            <div class="rounded-2xl border border-black/10 p-5"><strong>Ingreso con criterio</strong><p class="mt-2 text-sm text-slate-600">Tarifas y ocupacion ajustadas por temporada, demanda y limite anual.</p></div>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="overflow-hidden rounded-2xl bg-slate-100"><img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=900&q=80" alt="Interior premium de departamento" class="h-72 w-full object-cover"/></div>
+          <div class="mt-10 overflow-hidden rounded-2xl bg-slate-100"><img src="https://images.unsplash.com/photo-1585464231875-d9ef1f5ad396?auto=format&fit=crop&w=900&q=80" alt="Calle arbolada en Ciudad de Mexico" class="h-72 w-full object-cover"/></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-black/10 bg-brand-ivory py-10">
+    <div class="mx-auto flex max-w-7xl flex-col gap-6 px-5 sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+      <div>
+        <a href="/" class="flex items-baseline gap-1 text-lg font-extrabold"><span class="text-brand-coral">Roma Norte</span><span class="font-semibold text-brand-teal">Host</span></a>
+        <p class="mt-2 text-sm text-slate-500">Gestion patrimonial de renta corta en Roma Norte, CDMX.</p>
+      </div>
+      <div class="flex flex-wrap gap-5 text-sm font-semibold text-slate-600">
+        <a href="/servicios" class="hover:text-brand-ink">Servicios</a>
+        <a href="/resultados" class="hover:text-brand-ink">Resultados</a>
+        <a href="/about" class="hover:text-brand-ink">Nosotros</a>
+        <a href="/contacto" class="hover:text-brand-ink">Contacto</a>
       </div>
     </div>
   </footer>
-  <script src="js/main.js"></script>
+
+  <script>
+    const mxn = new Intl.NumberFormat("es-MX", {
+      style: "currency",
+      currency: "MXN",
+      maximumFractionDigits: 0
+    });
+
+    const percent = new Intl.NumberFormat("es-MX", {
+      style: "percent",
+      minimumFractionDigits: 2,
+      maximumFractionDigits: 2
+    });
+
+    const calculator = document.getElementById("yieldCalculator");
+    const fields = {
+      propertyValue: document.getElementById("propertyValue"),
+      traditionalRent: document.getElementById("traditionalRent"),
+      nightlyRate: document.getElementById("nightlyRate"),
+      bookedNights: document.getElementById("bookedNights"),
+      managementFee: document.getElementById("managementFee"),
+      maintenanceReserve: document.getElementById("maintenanceReserve")
+    };
+
+    const output = {
+      traditionalAnnual: document.getElementById("traditionalAnnual"),
+      traditionalYield: document.getElementById("traditionalYield"),
+      shortTermGross: document.getElementById("shortTermGross"),
+      feeAmount: document.getElementById("feeAmount"),
+      shortTermNet: document.getElementById("shortTermNet"),
+      shortTermYield: document.getElementById("shortTermYield"),
+      annualDelta: document.getElementById("annualDelta"),
+      deltaCopy: document.getElementById("deltaCopy"),
+      breakEvenRate: document.getElementById("breakEvenRate")
+    };
+
+    function numberFrom(field) {
+      return Number(String(field.value || 0).replace(/[^0-9.]/g, ""));
+    }
+
+    function updateYieldCalculator() {
+      const propertyValue = Math.max(numberFrom(fields.propertyValue), 1);
+      const traditionalAnnual = numberFrom(fields.traditionalRent) * 12;
+      const bookedNights = Math.min(Math.max(numberFrom(fields.bookedNights), 1), 180);
+      const shortTermGross = numberFrom(fields.nightlyRate) * bookedNights;
+      const feeRate = numberFrom(fields.managementFee);
+      const feeAmount = shortTermGross * feeRate;
+      const shortTermNet = shortTermGross - feeAmount - numberFrom(fields.maintenanceReserve);
+      const annualDelta = shortTermNet - traditionalAnnual;
+      const breakEvenRate = (traditionalAnnual + numberFrom(fields.maintenanceReserve)) / ((1 - feeRate) * bookedNights);
+
+      output.traditionalAnnual.textContent = mxn.format(traditionalAnnual);
+      output.traditionalYield.textContent = percent.format(traditionalAnnual / propertyValue);
+      output.shortTermGross.textContent = mxn.format(shortTermGross);
+      output.feeAmount.textContent = mxn.format(feeAmount);
+      output.shortTermNet.textContent = mxn.format(shortTermNet);
+      output.shortTermYield.textContent = percent.format(shortTermNet / propertyValue);
+      output.annualDelta.textContent = `${annualDelta >= 0 ? "+" : ""}${mxn.format(annualDelta)}`;
+      output.breakEvenRate.textContent = mxn.format(breakEvenRate);
+      output.deltaCopy.textContent = annualDelta >= 0
+        ? "Con estos supuestos, la gestion profesional mejora el ingreso neto anual frente a la renta tradicional."
+        : "Con estos supuestos, la renta tradicional gana. La oportunidad esta en validar tarifa, ocupacion o costos antes de decidir.";
+    }
+
+    calculator?.addEventListener("input", updateYieldCalculator);
+    calculator?.addEventListener("change", updateYieldCalculator);
+    updateYieldCalculator();
+  </script>
 </body>
 </html>

@@ -14,34 +14,49 @@
     "region": "CDMX",
     "country": "MX"
   },
+  "language": "es-MX",
+  "navigation": {
+    "home": "https://romanortehost.mx/",
+    "services": "https://romanortehost.mx/servicios",
+    "results": "https://romanortehost.mx/resultados",
+    "about": "https://romanortehost.mx/about",
+    "neighborhood": "https://romanortehost.mx/roma-norte",
+    "contact": "https://romanortehost.mx/contacto"
+  },
   "services": [
-    "Professional photography",
-    "Airbnb listing creation and optimization",
-    "Dynamic nightly pricing",
-    "Guest communication 7 days/week",
-    "Self check-in setup",
-    "Professional cleaning and turnover",
-    "Maintenance coordination",
-    "Monthly revenue reports",
-    "Direct booking channel"
+    "Diagnostico patrimonial para renta corta",
+    "Contrato y reglas de operacion",
+    "Fotografia profesional",
+    "Creacion y optimizacion de anuncios",
+    "Precios dinamicos por noche",
+    "Comunicacion con huespedes todos los dias",
+    "Seleccion de huespedes y comunicacion de reglas",
+    "Configuracion de self check-in",
+    "Limpieza profesional y rotacion",
+    "Coordinacion de mantenimiento documentado",
+    "Reportes mensuales de ingresos, gastos e incidencias",
+    "Seguimiento operativo de cumplimiento CDMX",
+    "Canal de reserva directa StayWork CDMX"
   ],
   "pricing": {
-    "standard": { "fee": "20%", "basis": "monthly rental revenue" },
-    "premium":  { "fee": "25%", "basis": "monthly rental revenue", "includes": ["dynamic pricing", "direct booking channel", "monthly strategy call"] },
+    "standard": { "fee": "20%", "basis": "ingreso mensual por renta" },
+    "premium":  { "fee": "25%", "basis": "ingreso mensual por renta", "includes": ["precios dinamicos", "canal de reserva directa", "llamada mensual de estrategia"] },
     "setupFee": 0,
     "monthlyRetainer": 0
   },
   "trackRecord": {
     "averageRating": 4.67,
-    "totalReviews": 280,
+    "totalReviews": 283,
     "yearsHosting": 4,
     "activeProperties": 3
   },
   "idealFor": [
-    "Roma Norte property owners wanting passive income",
-    "Owners with empty furnished apartments",
-    "Owners switching from long-term to short-term rental",
-    "Owners unhappy with current Airbnb management"
+    "Propietarios en Roma Norte que quieren ingreso con menos operacion diaria",
+    "Propietarios con departamentos amueblados vacios",
+    "Propietarios que evaluan pasar de renta tradicional a renta corta",
+    "Propietarios insatisfechos con su administrador actual de Airbnb"
   ],
-  "leadCapture": "https://romanortehost.mx/contact.html"
+  "positioning": "Operadora boutique para propietarios en Roma Norte/CDMX con enfoque de activo patrimonial: proteger el inmueble, buscar ingreso neto sano, documentar la operacion, reportar incidencias y tomar decisiones con datos.",
+  "complianceContext": "CDMX regula las estancias turisticas eventuales mediante obligaciones como registro, folio, reportes y seguimiento de ocupacion anual. El marco ha incluido limites de ocupacion para inmuebles en plataformas; el propietario debe validar su situacion legal especifica con asesoria propia.",
+  "leadCapture": "https://romanortehost.mx/contacto"
 }

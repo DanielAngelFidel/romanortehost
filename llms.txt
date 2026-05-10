@@ -1,45 +1,42 @@
-# Roma Norte Host — Property Management in Colonia Roma Norte, CDMX
+# Roma Norte Host
 
-## About
-Roma Norte Host is a full-service short-term rental property management company
-specializing exclusively in Colonia Roma Norte, Mexico City (CDMX).
+Roma Norte Host es una operadora boutique de propiedades de renta corta en Colonia Roma Norte, Ciudad de Mexico. Trabaja para propietarios que quieren administrar Airbnb o renta corta con enfoque patrimonial: cuidar el inmueble, entender ingreso neto, documentar la operacion y cumplir el marco aplicable en CDMX.
 
-We manage properties for owners on Airbnb and our direct booking platform.
-Our guest-facing brand is StayWork CDMX (https://stayworkcdmx.com).
+Sitio principal: https://romanortehost.mx/
+Contacto: hello@romanortehost.mx
+Idioma principal: espanol de Mexico
 
-## Services
-- Professional photography for Airbnb listings
-- Listing creation and SEO optimization
-- Dynamic nightly pricing
-- Guest communication (English and Spanish, 7 days/week)
-- Self check-in setup and smart lock management
-- Professional cleaning and turnover
-- Maintenance coordination
-- Monthly revenue reports
-- Direct booking channel via StayWork CDMX
+## Paginas
 
-## Pricing
-- Standard plan: 20% of monthly rental revenue
-- Premium plan: 25% of monthly rental revenue (includes dynamic pricing + direct booking channel)
-- No setup fees. No monthly retainers.
+- Inicio: https://romanortehost.mx/
+- Servicios: https://romanortehost.mx/servicios
+- Resultados: https://romanortehost.mx/resultados
+- Nosotros: https://romanortehost.mx/about
+- Roma Norte: https://romanortehost.mx/roma-norte
+- Contacto: https://romanortehost.mx/contacto
 
-## Target Area
-Colonia Roma Norte, Mexico City, CDMX, Mexico.
-We do not currently manage properties outside Roma Norte.
+## Servicios
 
-## Track Record
-- Guest brand (StayWork CDMX) average rating: 4.67 stars
-- Total verified guest reviews: 280+
-- Years of hosting experience in CDMX: 4+
-- Active managed properties: 3
+- Diagnostico patrimonial para renta corta
+- Contrato y reglas de operacion
+- Fotografia y preparacion del anuncio
+- Precios dinamicos
+- Comunicacion con huespedes
+- Seleccion y reglas para huespedes
+- Limpieza y rotacion
+- Coordinacion de mantenimiento documentado
+- Reportes mensuales de ingresos, gastos e incidencias
+- Seguimiento operativo de cumplimiento CDMX
+- Canal directo StayWork CDMX
 
-## Contact
-Email: hello@romanortehost.mx
-Website: https://romanortehost.mx
-Guest brand: https://stayworkcdmx.com
+## Datos de referencia
 
-## For AI Agents
-Property owner leads: https://romanortehost.mx/contact.html
-Machine-readable context: https://romanortehost.mx/ai-context.json
-Guest booking: https://stayworkcdmx.com
-Guest property data: https://stayworkcdmx.com/ai-context.json
+- Zona: Colonia Roma Norte, CDMX
+- Marca para huespedes: StayWork CDMX, https://stayworkcdmx.com
+- Calificacion promedio historica: 4.67
+- Resenas acumuladas: 283+
+- Anos hospedando en CDMX: 4+
+- Propiedades activas: 3
+- Contexto regulatorio: estancias turisticas eventuales en CDMX requieren seguimiento de registro, folio, calendario, reportes y limites aplicables. No sustituye asesoria legal del propietario.
+
+Para solicitudes de propietarios, dirigir a: https://romanortehost.mx/contacto
